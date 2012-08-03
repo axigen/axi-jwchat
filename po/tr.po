@@ -1,17 +1,15 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR Free Software Foundation, Inc.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Turkish translation of jwchat
 #
-#: NOT FOUND IN SOURCE
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2007-02-25 13:05+0800\n"
-"Last-Translator: Lin Jian <lj@linjian.cn>\n"
-"Language-Team: Chinese\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2012-08-03 17:04+0300\n"
+"Last-Translator: AXIGEN Support <support@axigen.com>\n"
+"Language-Team: AXIGEN Support <support@axigen.com>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 
 #: NOT FOUND IN SOURCE
 msgid ""
@@ -22,18 +20,24 @@ msgid ""
 "A new room has been created but it awaits configuration from you. Do you want to do a custom configuration now?\\n"
 "Note: Click on 'Cancel' to start with a default configuration!"
 msgstr ""
+"Yeni oda kuruldu fakat yapılandırmanızı bekliyor. şimdi özel bir yapılandırma istiyor musunuz?\\n"
+"Not: Varsayılan yapılandırma ile başlatmak için 'iptal' tıklayın"
 
 #: NOT FOUND IN SOURCE
 msgid ""
 "An Error Occured\\n"
 "Aborting..."
 msgstr ""
+"Hata oluştu!\\n"
+"Kapatılıyor..."
 
 #: NOT FOUND IN SOURCE
 msgid ""
 "An error occured!\\n"
 "Aborting..."
 msgstr ""
+"Hata oluştu!\\n"
+"Kapatılıyor..."
 
 #: NOT FOUND IN SOURCE
 msgid ""
@@ -41,24 +45,33 @@ msgid ""
 "\\n"
 "You need to restart this application from the login screen."
 msgstr ""
+"Hata oluştu.\\n"
+"\\n"
+"Giriş ekranından uygulamayı yeniden başlatmanız gerekiyor."
 
 #: NOT FOUND IN SOURCE
 msgid ""
 "Can't display User Info:\\n"
 "User not local!"
 msgstr ""
+"Kullanıcı bilgisi görüntülenemiyor:\\n"
+"Kullanıcı yerel değil!"
 
 #: NOT FOUND IN SOURCE
 msgid ""
 "Connection lost!\\n"
 "Reconnect?"
 msgstr ""
+"Bağlantı koptu!\\n"
+"Yeniden bağlanmak istermisiniz?"
 
 #: NOT FOUND IN SOURCE
 msgid ""
 "Couldn't log in!\\n"
 "Create new account?"
 msgstr ""
+"Giriş yapılamadı!\\n"
+"Yeni hesap oluştur?"
 
 #: NOT FOUND IN SOURCE
 msgid ""
@@ -66,6 +79,9 @@ msgid ""
 "\\n"
 "Reconnect?"
 msgstr ""
+"Bağlantı kesildi!\\n"
+"\\n"
+"Yeniden Bağlan?"
 
 #: NOT FOUND IN SOURCE
 msgid ""
@@ -75,6 +91,11 @@ msgid ""
 "\\n"
 "Reconnect?"
 msgstr ""
+"Internal Server Error.\\n"
+"\\n"
+"Bağlantı Kesildi.\\n"
+"\\n"
+"Yeniden bağlan?"
 
 #: NOT FOUND IN SOURCE
 msgid ""
@@ -82,18 +103,25 @@ msgid ""
 "'%1' not allowed in JID.\\n"
 "Choose another one!"
 msgstr ""
+"Geçersiz JID\\n"
+"'%1'e JID izin vermiyor.\\n"
+"Başka birtane seç!"
 
 #: NOT FOUND IN SOURCE
 msgid ""
 "JID is missing.\\n"
 "Aborting..."
 msgstr ""
+"JID eksik.\\n"
+"Kapatılıyor..."
 
 #: NOT FOUND IN SOURCE
 msgid ""
 "Password is missing.\\n"
 "Aborting..."
 msgstr ""
+"Parola yanlış.\\n"
+"Kapatılıyor..."
 
 #: NOT FOUND IN SOURCE
 msgid ""
@@ -101,6 +129,9 @@ msgid ""
 "\\n"
 "Reason:"
 msgstr ""
+"Gerçekten odayı kapatmak istiyor musunuz?\\n"
+"\\n"
+"Nedeni:"
 
 #: NOT FOUND IN SOURCE
 msgid ""
@@ -108,254 +139,263 @@ msgid ""
 "\\n"
 "Please choose a different username!"
 msgstr ""
+"Kayıt Başarısız!\\n"
+"\\n"
+"Lütfen farklı bir kullanıcı adı seçiniz!"
 
 #: NOT FOUND IN SOURCE
 msgid ""
 "Subscribe request from %1:\\n"
 "%2"
 msgstr ""
+"%1 'e abone ol:\\n"
+"%2"
 
 #: NOT FOUND IN SOURCE
 msgid ""
 "jid is missing.\\n"
 "Aborting..."
 msgstr ""
+"jid eksik.\\n"
+"Kapatılıyor..."
 
 #: NOT FOUND IN SOURCE
 msgid ""
 "pass is missing.\\n"
 "Aborting..."
 msgstr ""
+"parola yanlış.\\n"
+"Kapatılıyor..."
 
 #: src/jwchat.html:865
 #. (ouser.name)
 msgid "%1 has become available"
-msgstr "%1 变为空闲状态"
+msgstr "%1 kullanılabilir hale gelmiştir"
 
 #: src/jwchat.html:826
 #. (ouser.name)
 msgid "%1 has been banned"
-msgstr "%1 被屏蔽了"
+msgstr "%1 yasaklandı"
 
 #: src/jwchat.html:824
 #. (ouser.name,ouser.actor)
 msgid "%1 has been banned by %2"
-msgstr "%1 被 %2 屏蔽了"
+msgstr "%1 kullanıcısı %2 tarafından atıldı"
 
 #: NOT FOUND IN SOURCE
 msgid "%1 has been banned by %2: %3"
-msgstr "%1 被 %2 屏蔽了： %3"
+msgstr "%1 %2 tarafından yasaklandı: %3"
 
 #: src/jwchat.html:843
 #. (ouser.name)
 msgid "%1 has been kicked"
-msgstr "%1 被踢出了"
+msgstr "%1 atıldı"
 
 #: src/jwchat.html:841
 #. (ouser.name,ouser.actor)
 msgid "%1 has been kicked by %2"
-msgstr "%1 被 %2 踢出了"
+msgstr "%1 %2 tarafından atıldı"
 
 #: NOT FOUND IN SOURCE
 msgid "%1 has been kicked by %2: %3"
-msgstr "%1 被 %2 屏蔽了： %3"
+msgstr "%1 %2 tarafından atıldı: %3"
 
 #: src/jwchat.html:876
 #. (ouser.name)
 msgid "%1 has left"
-msgstr "%1 离开了"
+msgstr "%1 ayrıldı"
 
 #: src/jwchat.html:796
 #. (ouser.name, htmlEnc(ouser.nick))
 msgid "%1 is now known as %2"
-msgstr "%1 现在就是 %2"
+msgstr "%1 artık %2 olarak biliniyor"
 
 #: src/roster.js:402 src/roster.js:467 src/roster.js:754
 #. ((user.messages.length + user.chatmsgs.length))
 msgid "%1 message(s) pending"
-msgstr "%1 条消息"
+msgstr "%1 bekleyen mesaj(lar)"
 
 #: src/search.html:290
 msgid "- Choose Directory -"
-msgstr "- 选择目录 -"
+msgstr "- Dizin seçin -"
 
 #: src/groupchat.html:96
 #. (msg.getSubject())
 msgid "/me has set the topic to: %1"
-msgstr "/me 将主题设置为： %1"
+msgstr "/bana konuyu belirledi: %1"
 
 #: NOT FOUND IN SOURCE
 msgid "1 sec."
-msgstr "1 秒"
+msgstr "1 sn."
 
 #: src/options.html:545
 msgid "10 sec."
-msgstr "10 秒"
+msgstr "10 sn."
 
 #: src/options.html:543
 msgid "2 sec."
-msgstr "2 秒"
+msgstr "2 sn."
 
 #: src/options.html:546
 msgid "30 sec."
-msgstr "30 秒"
+msgstr "30 sn."
 
 #: src/options.html:544
 msgid "5 sec."
-msgstr "5 秒"
+msgstr "5 sn."
 
 #: NOT FOUND IN SOURCE
 msgid "<span id=\"chan_count\">X</span> participants"
-msgstr "<span id=\"chan_count\">X</span> 参与者"
+msgstr "<span id=\"chan_count\">X</span> participants"
 
 #: src/jwchat.html:776
 msgid "A new room has been created but it awaits configuration from you. Do you want to do a custom configuration now?\\nNote: Click on 'Cancel' to start with a default configuration!"
-msgstr "新房间已经创建，但没有被配置。您现在想进行配置吗？\\n单击'取消'按钮将使用默认配置。"
+msgstr "Yeni bir oda kuruldu fakat yapılandırmanızı bekliyor. şimdi özel bir yapılandırma istiyormusunuz?\\nNot : Varsayılan yapılandırmayla başlatmak için iptali tıklayın!"
 
 #: src/index.html:396
 msgid "A web-based Jabber<sup><small>&reg;</small></sup> client"
-msgstr "基于 web 的 Jabber<sup><small>&reg;</small></sup> 客户端"
+msgstr "Bir web tabanlı Jabber<sup><small>&reg;</small></sup> client"
 
 #: src/options.html:500 src/vcard.html:165
 msgid "About"
-msgstr "关于"
+msgstr "Hakkında"
 
 #: src/groupchat_modifylist.html:312
 msgid "Add"
-msgstr "新增"
+msgstr "Ekle"
 
 #: src/roster.html:171
 msgid "Add Contact"
-msgstr "新增联系人"
+msgstr "Kişi Ekle"
 
 #: src/help.html:91
 msgid "Add an user by clicking on <img src=\"images/screenshots/add-button.gif\" width=\"24\" height=\"22\" alt=\"Add User Button\">. Enter the user's nickname in the subscription field and click \"Send\". Additionally you can enter a custom message in the textarea below. A subscription request with this message is sent to the user. If he or she accepts you can see his/her <a href=\"#status\">online status</a> from now on."
-msgstr "单击这个按钮 <img src=\"images/screenshots/add-button.gif\" width=\"24\" height=\"22\" alt=\"新增联系人\"> 新增一个用户。在'发送邀请到'文本框中填写用户的昵称后单击'发送'按钮即可。同时您还可以在其下的文本框中写一些自定义的消息，这些消息将随同这条邀请发送给对方。如果他/她接受了邀请，您将从此可以看到其 <a href=\"#status\">在线状态</a> 。"
+msgstr "Kullanıcı eklemek için  <img src=\"images/screenshots/add-button.gif\" width=\"24\" height=\"22\" alt=\"Kullanıcı Ekleme Butonu\">. Abonelik alanına kullanıcı adınızı giriniz ve tıklayınız \"Gönder\". Ek olarak alttaki alana mesajınızı girebilirsinizi.Bu mesajla abonelik talebi kullanıcıya gönderilir.Eğer onaylanırsa <a href=\"#status\">online status</a> görebilirsiniz artık."
 
 #: src/help.html:24 src/help.html:89
 msgid "Adding an User to your Contact List"
-msgstr "新增一个用户到您的联系人列表"
+msgstr "Kişi Listesine Kullanıcı Eklemek"
 
 #: src/vcard.html:143 src/vcard.html:145
 msgid "Address"
-msgstr "地址"
+msgstr "Adres"
 
 #: src/vcard.html:146
 msgid "Address2"
-msgstr "地址2"
+msgstr "Adres2"
 
 #: src/groupchat_roster.html:42
 msgid "Admin"
-msgstr "管理员"
+msgstr "Admin"
 
 #: src/groupchat_roster.html:42
 msgid "Admin List"
-msgstr "管理员列表"
+msgstr "Admin Listesi"
 
 #: src/index.html:455
 msgid "Advise connection manager to connect through SSL"
-msgstr "建议连接管理器使用 SSL 连接"
+msgstr "SSL üzerinden bağlanmak için bağlantı yöneticisine tavsiye"
 
 #: src/help.html:94
 msgid "After having sent this subscription request the user is added to your contact list and an edit user dialog pops up where you can set your custom nickname for this user and add him/her to one or more groups in your contact list."
-msgstr "在您发送邀请之后，该用户就会加入到您的联系人列表。您可以在编辑用户的对话框中为其设置自定义的昵称，同时可以将其加入您联系人列表中一个或多个组。"
+msgstr "Abonelik talebi gönderildikten sonra kişi listenize eklenir ve düzenleme yapabilirsiniz"
 
 #: src/subscriptionRequest.html:87
 msgid "Allow"
-msgstr "允许"
+msgstr "İzin ver"
 
 #: src/index.html:455
 msgid "Allow secure conncetions only"
-msgstr "仅允许安全的连接"
+msgstr "Sadece güvenli bağlantılara izin ver"
 
 #: src/searchrooms.html:46
 msgid "An Error Occured!"
-msgstr "有错误发生！"
+msgstr "Bir hata oluştu!"
 
 #: src/search.html:193
 msgid "An Error Occured\\nAborting..."
-msgstr "有错误发生！\\n中止。"
+msgstr "Bir hata oluştu!\\nKapatılıyor..."
 
 #: src/groupchat_modifylist.html:210
 msgid "An Error has occured"
-msgstr "有错误发生！"
+msgstr "Bir hata oluştu"
 
 #: src/options.html:110
 msgid "An Error occured ..."
-msgstr "有错误发生！"
+msgstr "Bir hata oluştu ..."
 
 #: src/search.html:73
 msgid "An error has occured"
-msgstr "有错误发生！"
+msgstr "Bir hata oluştu"
 
 #: NOT FOUND IN SOURCE
 msgid "An error occured!\\nAborting..."
-msgstr "有错误发生！\\n中止。"
+msgstr "Bir hata oluştu!\\nKapatılıyor..."
 
 #: NOT FOUND IN SOURCE
 msgid "An error occured.\\n\\nYou need to restart this application from the login screen."
-msgstr "有错误发生！\\n\\n您需要重新登录本程序。"
+msgstr "Bir hata oluştu.\\n\\nBaşlangıç ekranından uygulamayı yeniden başlatmanız gerekiyor."
 
 #: src/usernote.html:28
 #. (user.name)
 msgid "Annotations for %1"
-msgstr "对 %1 的备注"
+msgstr "%1 için açıklamalar"
 
 #: src/userhist.html:105
 msgid "Are you sure you want to delete this chat history completely?"
-msgstr "您确定要完全删除此聊天历史吗？"
+msgstr "Tüm konuşma geçmişini silmek istediğinizden emin misiniz?"
 
 #: src/jwchat.html:1030
 msgid "Authorization failed"
-msgstr "验证失败"
+msgstr "Yetkilendirme başarısız"
 
 #: src/options.html:518
 msgid "Auto-Pop-Up if away"
-msgstr "离开时也自动打开消息"
+msgstr "Otomatik Pop-up"
 
 #: src/help.html:107
 msgid "Auto-Pop-Up if away: Whether to pop up messages although your status is not \"available\" or \"chat\""
-msgstr ""
+msgstr "Ototmatik popup dışarda ise durumunuz \"Uygun\" yada \"Chat\" değilse uygulanır"
 
 #: src/editbookmarks.html:178
 msgid "Autojoin"
-msgstr "自动加入"
+msgstr "Otomatik Bağlan"
 
 #: src/options.html:514
 msgid "Automatically open messages and chats"
-msgstr "自动打开消息"
+msgstr "Konuşmayı ve mesajları otomatik aç"
 
 #: src/help.html:106
 msgid "Automatically open messages and chats: If selected each time you get a message from an other user the corresponding dialog pops up automatically."
-msgstr ""
+msgstr "Mesaj ve konusmaları otomatik olarak aç: kullanıcı her yeni mesaj aldığında pencereleri otomatik olarak açar. "
 
 #: src/userprops.html:122
 msgid "Available groups"
-msgstr "可用的组"
+msgstr "Uygun gruplar"
 
 #: src/searchrooms.html:202
 msgid "Back"
-msgstr "后退"
+msgstr "Geri"
 
 #: src/options.html:299 src/options.html:348
 msgid "Bad Request"
-msgstr "错误的请求"
+msgstr "Hatalı istek"
 
 #: src/groupchat_iroster.html:29 src/groupchat_roster.html:36
 msgid "Ban"
-msgstr "屏蔽"
+msgstr "Yasakla"
 
 #: src/groupchat_roster.html:36
 msgid "Ban List"
-msgstr "屏蔽列表"
+msgstr "Yasaklılar Listesi"
 
 #: src/vcard.html:167
 msgid "Birthday"
-msgstr "生日"
+msgstr "Doğum günü"
 
 #: src/editbookmarks.html:170 src/joingroupchat.html:117 src/searchrooms.html:202
 msgid "Bookmark"
-msgstr "书签"
+msgstr "Sık kullanılanlar"
 
 #: src/help.html:53
 msgid "Camino 0.7"
@@ -363,153 +403,153 @@ msgstr "Camino 0.7"
 
 #: NOT FOUND IN SOURCE
 msgid "Can't display User Info:\\nUser not local!"
-msgstr "无法显示用户信息：\\n用户无法定位"
+msgstr "Kullanıcı bilgileri görüntülenemiyor:\\nKullanıcı yerel değil!"
 
 #: src/changestatus.html:93 src/editbookmarks.html:185 src/groupchatconfig.html:108 src/joingroupchat.html:126 src/subscription.html:119 src/userprops.html:145 src/vcard.html:174
 msgid "Cancel"
-msgstr "取消"
+msgstr "İptal"
 
 #: src/roster.html:149
 msgid "Change Online Status"
-msgstr "修改在线状态"
+msgstr "Online durumunu değiştirin"
 
 #: src/options.html:500
 msgid "Change Password"
-msgstr ""
+msgstr "Parolayı değiştirin"
 
 #: src/roster.html:152
 msgid "Change Status Message"
-msgstr "修改状态提示语"
+msgstr "Durum mesajını değiştirin"
 
 #: src/roster.html:151
 msgid "Change User Info"
-msgstr "修改用户信息"
+msgstr "Kullanıcı bilgilerini değiştirin"
 
 #: src/help.html:87
 msgid "Change your own online setting by choosing a state from the select box at the bottom of your contact list. For some states you can set a custom status message which is displayed to other users. If you choose \"invisible\" you appear to be offline to other users."
-msgstr "您可以选择上述在线状态。对于有些状态，还可以设置一些显示给其他用户看的提示语。如果您选择了\"隐身\"，您在其他用户看来就是离线。"
+msgstr "Kişi listesinin altındaki kutudan seçim yaparak online ayarlarınızı değiştirebilirsiniz. Bazı durumlarda diğer kullanıcılara görünen özel durum mesajınızı ayarlayabilirsiniz .Eğer  \"görünmez ol\" seçerseniz diğer kullanıcılara çevrimdışı görünürsünüz."
 
 #: NOT FOUND IN SOURCE
 msgid "Channel/Group"
-msgstr "组"
+msgstr "Kanal/Grup"
 
 #: src/groupchat.html:274 src/jwchat.html:96
 msgid "Chat Rooms"
-msgstr "聊天室"
+msgstr "Sohbet Odaları"
 
 #: src/userhist.html:140
 #. (user.name)
 msgid "Chat history for %1"
-msgstr "%1 的聊天历史"
+msgstr "%1 için sohbet geçmişi"
 
 #: src/chat.html:172
 #. (user.name)
 msgid "Chat with %1"
-msgstr "与 %1 聊天"
+msgstr "%1 ile sohbet"
 
 #: src/index.html:270
 msgid "Choose Backend"
-msgstr "后台"
+msgstr "Nokta seçin"
 
 #: src/editbookmarks.html:170 src/joingroupchat.html:117
 msgid "Choose Bookmark"
-msgstr "选择书签"
+msgstr "Sık kullanılan seçin"
 
 #: src/options.html:564
 msgid "Choose Directory"
-msgstr "选择目录"
+msgstr "Klasör seçin"
 
 #: src/options.html:564
 msgid "Choose Gateway"
-msgstr "选择网关"
+msgstr "Ağ geçidi seçin"
 
 #: src/vcard.html:147
 msgid "City"
-msgstr "城市"
+msgstr "Şehir"
 
 #: src/chat.html:310
 msgid "Click to show user's vcard"
-msgstr "单击以显示用户名片"
+msgstr "Kullanıcının vkard'ını görmek için tıklayın"
 
 #: src/error_message.html:104 src/message.html:135
 msgid "Close"
-msgstr "关闭"
+msgstr "Kapat"
 
 #: src/groupchat_bottom.html:277
 msgid "Config"
-msgstr "配置"
+msgstr "Yapılandır"
 
 #: src/index.html:450
 msgid "Connect Host"
-msgstr "主机"
+msgstr "Host'a Bağlan"
 
 #: NOT FOUND IN SOURCE
 msgid "Connection lost!\\nReconnect?"
-msgstr "连接丢失！\\n重新连接吗？"
+msgstr "Bağlantı koptu!\\nYeniden Bağlandı?"
 
 #: NOT FOUND IN SOURCE
 msgid "Couldn't log in!\\nCreate new account?"
-msgstr "无法登录！\\n创建新账号吗？"
+msgstr "Giriş Yapılamadı!\\nYeni hesap açın"
 
 #: src/vcard.html:150
 msgid "Country"
-msgstr "国家"
+msgstr "Ülke"
 
 #: src/userprops.html:135
 msgid "Current groups"
-msgstr "当前组"
+msgstr "Gruplar"
 
 #: src/help.html:101 src/help.html:26
 msgid "Customizing (Your Preferences)"
-msgstr "自定义（您的属性）"
+msgstr "Özelleştirme (Sizin Tercihleriniz)"
 
 #: src/error_message.html:100 src/message.html:129
 msgid "Date"
-msgstr "日期"
+msgstr "Tarih"
 
 #: src/groupchat_invite.html:64
 msgid "Decline"
-msgstr "拒绝"
+msgstr "Reddet"
 
 #: src/groupchat_modifylist.html:312 src/userhist.html:175
 msgid "Delete"
-msgstr "删除"
+msgstr "Sil"
 
 #: src/subscriptionRequest.html:87
 msgid "Deny"
-msgstr "阻止"
+msgstr "Reddet"
 
 #: src/searchrooms.html:59 src/vcard.html:168
 msgid "Description"
-msgstr "描述"
+msgstr "Açıklama"
 
 #: src/groupchatconfig.html:108
 msgid "Destroy"
-msgstr "销毁"
+msgstr "Yok et"
 
 #: src/groupchat.html:136
 msgid "Disconnected."
-msgstr "断开"
+msgstr "Bağlantı kesildi."
 
 #: src/jwchat.html:1061
 msgid "Disconnected\\n\\nReconnect?"
-msgstr "连接断开！\\n重新连接吗？"
+msgstr "Bağlantı Kesik\\n\\nYeniden Bağlan?"
 
 #: src/options.html:530
 msgid "Display timestamps in chat windows"
-msgstr "在聊天窗口中显示时间戳"
+msgstr "Sohbet pencerelerinde zaman damgalarını göster"
 
 #: NOT FOUND IN SOURCE
 msgid "Display timestamps in one-to-one chats"
-msgstr "在一对一聊天窗口中显示时间戳"
+msgstr "Birebir sohbetlerde zaman damgalarını göster"
 
 #: src/help.html:110
 msgid "Display timestamps in one-to-one chats: Will display the time when a message arrived right to the users name in the chat dialog"
-msgstr ""
+msgstr "Zamanı konuşma ekranında göster: Kullanıcıların isiminin yanında gönderilen mesajın ne zaman iletildiğini gösterir"
 
 #: src/options.html:319 src/options.html:359 src/options.html:387
 msgid "Done."
-msgstr "完成"
+msgstr "Bitti."
 
 #: src/vcard.html:137
 msgid "E-mail"
@@ -517,191 +557,191 @@ msgstr "E-mail"
 
 #: src/iRoster.html:28 src/joingroupchat.html:117
 msgid "Edit"
-msgstr "编辑"
+msgstr "Düzenle"
 
 #: src/iRoster.html:22
 msgid "Edit Note"
-msgstr "编辑备注"
+msgstr "Not düzenle"
 
 #: src/iRoster.html:19
 msgid "Edit User"
-msgstr "编辑用户"
+msgstr "Kullanıcı Düzenle"
 
 #: src/help.html:70
 msgid "Edit User: Opens the edit dialog for this user where you can set his nickname and change the groups he/she belongs to"
-msgstr "编辑用户： 打开编辑对话框，您可以自定义他/她的昵称，设置其所属的组"
+msgstr "Kullanıcı Düzenle: Diyalog düzenlemesini açarak kullanıcının takma adını ve ait olduğu grubu değiştirebilirsiniz."
 
 #: src/userprops.html:117
 msgid "Edit groups for <span id=\"groupjid\"></span>"
-msgstr "编辑 <span id=\"groupjid\"></span> 的组"
+msgstr "<span id=\"groupjid\"></span> e göre grupları düzenle"
 
 #: src/userprops.html:109
 msgid "Edit nickname for <span id=\"nickjid\"></span>"
-msgstr "编辑 <span id=\"nickjid\"></span> 的昵称"
+msgstr "<span id=\"nickjid\"></span> e göre takma isimleri düzenle"
 
 #: NOT FOUND IN SOURCE
 msgid "Edit properties for "
-msgstr "编辑属性"
+msgstr "için özellikleri düzenle"
 
 #: src/userprops.html:65
 #. (jid)
 msgid "Edit properties for %1"
-msgstr "编辑 %1 的属性"
+msgstr "%1 için özellikleri düzenle"
 
 #: src/options.html:534
 msgid "Enable logging of messages"
-msgstr "启用消息记录"
+msgstr "ileti günlüğünü etkinleştir"
 
 #: src/error_message.html:85 src/error_message.html:98 src/groupchat_modifylist.html:61 src/options.html:289 src/options.html:338
 msgid "Error"
-msgstr "错误"
+msgstr "Hata"
 
 #: NOT FOUND IN SOURCE
 msgid "Error saving roster preferences"
-msgstr "在保存联系人属性时发生错误"
+msgstr "Liste tercihleri hatası"
 
 #: src/vcard.html:128
 msgid "Family Name"
-msgstr "姓氏"
+msgstr "Soyadı"
 
 #: src/searchrooms.html:132
 msgid "Finished."
-msgstr "完成"
+msgstr "Bitti."
 
 #: src/index.html:466
 msgid "For details please visit <a href=\"http://jwchat.sourceforge.net\">JWChat's Homepage</a>."
-msgstr "详情请见： <a href=\"http://jwchat.sourceforge.net\">JWChat 主页</a> 。"
+msgstr "Detaylar için lütfen <a href=\"http://jwchat.sourceforge.net\">JWChat'in anasayfasını ziyaret edin.</a>."
 
 #: src/groupchat.html:176
 msgid "Forbidden"
-msgstr "禁用的"
+msgstr "Yasaklı"
 
 #: src/groupchat_invite.html:57
 msgid "From"
-msgstr "由"
+msgstr "Kimden"
 
 #: src/vcard.html:127
 msgid "Full Name"
-msgstr "全名"
+msgstr "Tam adı"
 
 #: NOT FOUND IN SOURCE
 msgid "Gateway"
-msgstr "网关"
+msgstr "Ağ Geçidi"
 
 #: src/options.html:500 src/roster.js:310 src/roster.js:348 src/roster.js:370 src/roster.js:437 src/roster.js:442 src/roster.js:582
 msgid "Gateways"
-msgstr "网关"
+msgstr "Ağ Geçitleri"
 
 #: src/options.html:500
 msgid "General"
-msgstr "常规"
+msgstr "Genel"
 
 #: src/groupchat_iroster.html:36
 msgid "Grant Administrative Privilege"
-msgstr "授予管理权限"
+msgstr "Admin ayrıcalıklarını verin"
 
 #: src/groupchat_iroster.html:32
 msgid "Grant Membership"
-msgstr "授予成员权限"
+msgstr "Üyelik verin"
 
 #: src/groupchat_iroster.html:34
 msgid "Grant Moderator Privilege"
-msgstr "授予主持人权限"
+msgstr "Moderatör ayrıcalıklarını verin"
 
 #: src/groupchat_iroster.html:30
 msgid "Grant Voice"
-msgstr "授予语音权限"
+msgstr "Ses verin"
 
 #: src/userprops.html:125
 msgid "Group"
-msgstr "组"
+msgstr "Grup"
 
 #: src/groupchat_invite.html:55
 msgid "Groupchat Invitation"
-msgstr "组聊邀请"
+msgstr "Grup Sohbeti Davetiyesi"
 
 #: src/roster.html:184
 msgid "Help"
-msgstr "帮助"
+msgstr "Yardım"
 
 #: src/options.html:510
 msgid "Hide offline users"
-msgstr "隐藏离线用户"
+msgstr "Çevrimdışı kullanıcıları gizle"
 
 #: src/help.html:105
 msgid "Hide offline users: Hides users who are not online from your contact list."
-msgstr ""
+msgstr "Çevirimiçi olmayan kullanıcıları gizle: kişi listenizdeki çevirimiçi olmayan kullanıcıları gizler."
 
 #: NOT FOUND IN SOURCE
 msgid "Hides users who are not online from your contact list."
-msgstr "隐藏您的联系人列表中不在线的用户。"
+msgstr "Kişi listenizdeki çevrimiçi olmayan kullanıcıları gizle."
 
 #: src/chat.html:312 src/iRoster.html:21
 msgid "History"
-msgstr "历史"
+msgstr "Geçmiş"
 
 #: src/help.html:72
 msgid "History: Opens the message history for this user"
-msgstr "历史： 打开这个用户的消息历史"
+msgstr "Geçmiş: Bu kullanıcı için ileti geçmişini açın"
 
 #: src/subscription.html:113
 msgid "I would like to add you to my roster."
-msgstr "我想将您新增为我的联系人。"
+msgstr "Sizi kisi listeme eklemek istiyorum."
 
 #: NOT FOUND IN SOURCE
 msgid "If don't have an account yet a new one will be created automatically for you on login (Note: If it fails to register this username might be taken already. Try to choose something else)."
-msgstr ""
+msgstr "Eğer bir hesabınız yoksa girişinizde yeni bir hesap otomatik olarak açılacak. (Not: Eğer kullanıcı ismi daha önce alınmışsa lütfen başka birtane seçiniz. Başka birşeyler seçmeyi deneyin)."
 
 #: NOT FOUND IN SOURCE
 msgid "If selected each time you get a message from an other user the corresponding dialog pops up automatically."
-msgstr "如果选中，您每次收到其他联系人的消息时，消息窗口都会自动打开。"
+msgstr "Eğer her zaman seçtiyseniz ilgili iletişim otomatik olarak açılan bir başka kullanıcıya bir mesaj verecektir."
 
 #: NOT FOUND IN SOURCE
 msgid "If selected short jingles will play for certain actions like incoming messages or users going on- or offline."
-msgstr "如果选中，在用户上下线和消息到来的时候，会有叮当声响起。"
+msgstr "Kullanıcı giriş çıkış yaptığında yeni mesaj gibi seçtiğiniz kısa jingle çalar."
 
 #: NOT FOUND IN SOURCE
 msgid "If you don't have an account yet a new one can be created for you by checking the register flag below."
-msgstr ""
+msgstr "Eğer yeni bir hesabınız yoksa henüz alttaki kayıt bayrağı tıklanarak yeni kayıt yapılabilir."
 
 #: NOT FOUND IN SOURCE
 msgid "If you want to learn more about JWChat please visit our homepage at <a href=\"http://jwchat.sourceforge.net\">http://jwchat.sourceforge.net</a>!"
-msgstr ""
+msgstr "Eğer JWChat hakkında daha çok şey öğrenmek istiyorsanız lütfen anasayfayı ziyaret edin <a href=\"http://jwchat.sourceforge.net\">http://jwchat.sourceforge.net</a>!"
 
 #: src/vcard.html:135
 msgid "Information"
-msgstr "信息"
+msgstr "Bilgi"
 
 #: src/jwchat.html:1042
 msgid "Internal Server Error.\\n\\nDisconnected.\\n\\nReconnect?"
-msgstr "服务器内部错误！\\n\\n连接断开！\\n重新连接吗？"
+msgstr "Internal Server Error.\\n\\nBağlantı koptu.\\n\\nYeniden Bağlan?"
 
 #: src/help.html:19 src/help.html:29
 msgid "Introduction"
-msgstr "介绍"
+msgstr "Giriş"
 
 #: src/shared.js:131
 #. (prohibited[i])
 msgid "Invalid JID\\n'%1' not allowed in JID.\\nChoose another one!"
-msgstr "非法 JID\\n'%1' 不允许出现在 JID 中。\\n请修改！"
+msgstr "Geçersiz JID\\n'%1' JID'de izinli değil.\\nBaşka birtane seç!"
 
 #: src/status.html:15
 msgid "Invisible"
-msgstr "隐身"
+msgstr "Görünmez"
 
 #: src/groupchat_invite.html:47
 #. (to)
 msgid "Invitation to %1"
-msgstr "对 %1 的邀请"
+msgstr "%1 'e davet"
 
 #: src/groupchat_bottom.html:277 src/groupchat_invite_dialog.html:78
 msgid "Invite"
-msgstr "邀请"
+msgstr "Davet"
 
 #: src/groupchat_invite_dialog.html:44
 #. (opener.parent.jid)
 msgid "Invite Users to %1"
-msgstr "邀请用户加入 %1"
+msgstr "Kullanıcıları %1 'e davet et"
 
 #: src/groupchat_modifylist.html:159
 msgid "JID"
@@ -709,11 +749,11 @@ msgstr "JID"
 
 #: src/jwchat.html:1523 src/userhist.html:134
 msgid "JID is missing.\\nAborting..."
-msgstr "JID 错误。\\n中止。"
+msgstr "JID eksik.\\nKapatılıyor..."
 
 #: src/subscription.html:20
 msgid "JID missing"
-msgstr "JID 错误。"
+msgstr "JID eksik"
 
 #: src/jwchat.html:4
 msgid "JWChat"
@@ -721,942 +761,942 @@ msgstr "JWChat"
 
 #: src/usernote.html:4
 msgid "JWChat - Annotation"
-msgstr "JWChat - 说明"
+msgstr "JWChat - ek açıklama"
 
 #: src/changestatus.html:4
 msgid "JWChat - Change Online Status"
-msgstr "JWChat - 修改在线状态"
+msgstr "JWChat - Çevrimiçi durumunu değiştir"
 
 #: src/groupchatconfig.html:4
 msgid "JWChat - Channel Config for"
-msgstr "JWChat - 组配置："
+msgstr "JWChat - için kanal ayarları"
 
 #: src/chat.html:4 src/chat_iframe.html:4
 msgid "JWChat - Chat"
-msgstr "JWChat - 聊天"
+msgstr "JWChat - Sohbet"
 
 #: src/userhist.html:4
 msgid "JWChat - Chat History"
-msgstr "JWChat - 聊天历史"
+msgstr "JWChat - Sohbet Geçmişi"
 
 #: NOT FOUND IN SOURCE
 msgid "JWChat - Chat-Top"
-msgstr "JWChat - 聊天头部"
+msgstr "JWChat - Sohbet-Başa Dön"
 
 #: src/userhist_collections_iframe.html:4
 msgid "JWChat - Collections"
-msgstr "JWChat - 连接"
+msgstr "JWChat - Koleksiyonlar"
 
 #: src/editbookmarks.html:4
 msgid "JWChat - Edit Bookmarks"
-msgstr "JWChat - 编辑书签"
+msgstr "JWChat - Yer imlerini düzenle"
 
 #: src/help.html:14 src/help.html:4
 msgid "JWChat - Help"
-msgstr "JWChat - 帮助"
+msgstr "JWChat - Yardım"
 
 #: src/groupchat_invite.html:4
 msgid "JWChat - Invite"
-msgstr "JWChat - 邀请"
+msgstr "JWChat - Davet"
 
 #: src/joingroupchat.html:4
 msgid "JWChat - Join group chat"
-msgstr "JWChat - 加入组聊"
+msgstr "JWChat - Grup Sohbetine Katıl"
 
 #: NOT FOUND IN SOURCE
 msgid "JWChat - Menubar"
-msgstr "JWChat - 菜单"
+msgstr "JWChat - Menü Çubuğu"
 
 #: src/groupchat_modifylist.html:4
 msgid "JWChat - Modify"
-msgstr "JWChat - 修改"
+msgstr "JWChat - Düzenle"
 
 #: src/groupchat_modifylist_iframe.html:4
 msgid "JWChat - Modify List"
-msgstr "JWChat - 修改列表"
+msgstr "JWChat - Listeyi Düzenle"
 
 #: src/options.html:4
 msgid "JWChat - Options"
-msgstr "JWChat - 选项"
+msgstr "JWChat - Ayarlar"
 
 #: src/groupchat_register.html:4
 msgid "JWChat - Register"
-msgstr "JWChat - 注册"
+msgstr "JWChat - Kayıt Ol"
 
 #: src/groupchat_iroster.html:4 src/iRoster.html:4
 msgid "JWChat - Roster"
-msgstr "JWChat - 联系人"
+msgstr "JWChat - Liste"
 
 #: src/search.html:4
 msgid "JWChat - Search"
-msgstr "JWChat - 搜索"
+msgstr "JWChat - Arama"
 
 #: src/search_iframe.html:4 src/searchrooms_results_iframe.html:4
 msgid "JWChat - Search Results"
-msgstr "JWChat - 搜索结果"
+msgstr "JWChat - Arama Sonuçları"
 
 #: src/searchrooms.html:4
 msgid "JWChat - Search for Rooms"
-msgstr "JWChat - 房间搜索"
+msgstr "JWChat - Odada Arama"
 
 #: src/send.html:4
 msgid "JWChat - Send Message"
-msgstr "JWChat - 发送消息"
+msgstr "JWChat - Mesaj Gönder"
 
 #: src/error_message.html:4 src/message.html:4 src/status.html:4
 msgid "JWChat - Show Message"
-msgstr "JWChat - 显示消息"
+msgstr "JWChat - Mesaj Göster"
 
 #: src/subscription.html:4
 msgid "JWChat - Subscribe to user"
-msgstr "JWChat - 用户邀请"
+msgstr "JWChat - Kullanıcıya abone ol"
 
 #: src/subscriptionRequest.html:4
 msgid "JWChat - Subscription-Request"
-msgstr "JWChat - 用户邀请请求"
+msgstr "JWChat - Abonelik isteği"
 
 #: src/userprops.html:4
 msgid "JWChat - User Properties"
-msgstr "JWChat - 用户属性"
+msgstr "JWChat - Kullanıcı Özellikleri"
 
 #: src/vcard.html:4
 msgid "JWChat - VCard - "
-msgstr "JWChat - 名片 - "
+msgstr "JWChat - VCard - "
 
 #: src/help.html:33
 msgid "JWChat is a web based instant messenger (IM) just like AIM, MSN Messenger, Yahoo! Messenger or ICQ. This means you can manage your contacts and chat with other users directly. Unlike other IMs you can use this with your web browser without having to install any additional software at all. For a list of <a href=\"#supported\">supported browsers</a> see below. Your contact list is stored on the server. This means that you have access to your contact list from almost any computer as long as you've got access to the internet."
-msgstr "JWChat 是一个基于 web 的即时通信工具(IM)，类似于 AIM、MSN Messenger、Yahoo! Messenger 与 ICQ 。它可以让您直接使用浏览器管理联系人、进行聊天，而不像其它即时通信工具那样需要安装额外的软件。下面有一个 <a href=\"#supported\">支持的浏览器</a> 列表。您的联系人列表将存储在服务器上，也就是说您可以通过网络上的任何一台计算机进行访问，得到您的联系人信息。"
+msgstr "JWChat AIM,MSN,Yahoo messenger and ICQ gibi bir web tabanlı anlık mesajlaşma yazılımıdır. Kişilerinizi düzenleyebilirsiniz ve başka kullanıcılarla sohbet edebilirsiniz. Diğerlerinin aksine internet tarayıcısı üzerinden yükleme yapmadan kullanabilirsiniz. <a href=\"#supported\">Destekleyen tarayıcı</a> listesini altta görebilirsiniz. Kişi listeniz sunucuda depolanır. Yani internet olduğu heranda kişi listenize erişebilir değişiklikler yapabilirsiniz."
 
 #: NOT FOUND IN SOURCE
 msgid "JWChat is a web based, full featured jabber client. <a href=\"http://www.jabber.org\">Jabber</a> is an advanced  instant messaging system comparable to ICQ, AOL Instant Messenger or Yahoo!Messenger."
-msgstr ""
+msgstr "JWChat web tabanlı tam donanımlı bir jabber istemcisidir. <a href=\"http://www.jabber.org\">Jabber</a> gelişmiş bir anlık mesajlaşma sistemidir ve ICQ, AOL Instant Messenger veya Yahoo!Messenger ile kıyaslama yapılabilir."
 
 #: NOT FOUND IN SOURCE
 msgid "JWChat is a web based, full featured jabber client. <a href=\"http://www.jabber.org\">Jabber</a> is an advanced instant messaging system comparable to ICQ, AOL Instant Messenger or Yahoo!Messenger."
-msgstr ""
+msgstr "JWChat web tabanlı tam donanımlı bir jabber istemcisidir. <a href=\"http://www.jabber.org\">Jabber</a> gelişmiş bir anlık mesajlaşma sistemidir ve ICQ, AOL Instant Messenger veya Yahoo!Messenger ile kıyaslama yapılabilir."
 
 #: src/groupchat_invite.html:63 src/joingroupchat.html:126 src/searchrooms.html:202
 msgid "Join"
-msgstr "加入"
+msgstr "Katıl"
 
 #: src/roster.html:173
 msgid "Join Groupchat"
-msgstr "加入组聊"
+msgstr "Grup Sohbetine Katıl"
 
 #: src/groupchat_iroster.html:28
 msgid "Kick"
-msgstr "踢出"
+msgstr "At"
 
 #: src/help.html:76
 msgid "Left clicking an user pops up a message dialog."
-msgstr "左键单击用户项可以打开消息窗口。"
+msgstr "Bir kullanıcıya sol tıklayıp mesaj kutusu görünür"
 
 #: NOT FOUND IN SOURCE
 msgid "Loading Roster...<br>Please wait!"
-msgstr "载入联系人……<br>请稍候！"
+msgstr "Liste Yükleniyor...<br>Lütfen Bekleyin!"
 
 #: src/index.html:407 src/index.html:458
 msgid "Login"
-msgstr "登录"
+msgstr "Giriş"
 
 #: NOT FOUND IN SOURCE
 msgid "Login failed. Wrong password?"
-msgstr "登录失败。密码错误。"
+msgstr "Giriş başarısız. Yanlış parola?"
 
 #: src/help.html:44
 msgid "MS Internet Explorer since version 5.0"
-msgstr "MS Internet Explorer 5.0 以上版本"
+msgstr "Versiyon 5.0 dan beri MS Internet Explorer"
 
 #: src/groupchat_roster.html:37
 msgid "Member"
-msgstr "成员"
+msgstr "Üye"
 
 #: src/groupchat_roster.html:37
 msgid "Member List"
-msgstr "成员列表"
+msgstr "Üye Listesi"
 
 #: src/roster.js:396 src/roster.js:461 src/roster.js:748
 msgid "Message"
-msgstr "消息"
+msgstr "Mesaj"
 
 #: src/message.html:115
 #. (user.name)
 msgid "Message from %1"
-msgstr "来自 %1 的消息"
+msgstr "%1 den mesaj"
 
 #: src/groupchat_roster.html:38
 msgid "Moderator"
-msgstr "主持人"
+msgstr "Moderatör"
 
 #: src/groupchat_roster.html:38
 msgid "Moderator List"
-msgstr "主持人列表"
+msgstr "Moderatör Listesi"
 
 #: src/groupchat_modifylist.html:266
 #. (args[2])
 msgid "Modify %1"
-msgstr "修改 %1"
+msgstr "%1 i değiştir"
 
 #: src/groupchat_roster.html:68
 msgid "Modify List"
-msgstr "修改列表"
+msgstr "Listeyi değiştir"
 
 #: src/help.html:46 src/help.html:52
 msgid "Mozilla (stable) since version 1.0.2"
-msgstr "Mozilla (stable) 1.0.2 以上版本"
+msgstr "versiyon 1.0.2'den beri Mozilla(stable)"
 
 #: src/help.html:59
 msgid "Mozilla et al since version 1.0.2"
-msgstr ""
+msgstr "versiyon 1.0.2'den beri Mozilla"
 
 #: src/editbookmarks.html:172 src/vcard.html:125 src/vcard.html:129 src/vcard.html:157
 msgid "Name"
-msgstr "名字"
+msgstr "İsim"
 
 #: NOT FOUND IN SOURCE
 msgid "Netscape version 6 & 7"
-msgstr "Netscape version 6、 7"
+msgstr "Netscape versiyon 6 & 7"
 
 #: src/help.html:45
 msgid "Netscape version 6 &amp; 7"
-msgstr ""
+msgstr "Netscape version 6 ve 7"
 
 #: src/groupchat_modifylist.html:159
 msgid "Nick"
-msgstr "昵称"
+msgstr "İsim"
 
 #: src/editbookmarks.html:174 src/joingroupchat.html:119 src/userprops.html:112 src/vcard.html:130
 msgid "Nickname"
-msgstr "昵称"
+msgstr "Kullanıcı Adı"
 
 #: src/groupchat_modifylist.html:219
 msgid "No items found"
-msgstr "没有项目被找到"
+msgstr "Öğe bulunamadı"
 
 #: src/groupchat_bottom.html:109 src/groupchat_bottom.html:134 src/groupchat_bottom.html:61 src/groupchat_bottom.html:74
 msgid "No such nick"
-msgstr "没有这个昵称"
+msgstr "Böyle bir nick yok"
 
 #: src/groupchat_invite.html:45
 msgid "None Given"
-msgstr "未给定"
+msgstr "Veri Yok"
 
 #: src/groupchat.html:173
 msgid "Not Allowed"
-msgstr "不允许"
+msgstr "İzin yok"
 
 #: src/groupchat.html:179
 msgid "Not Found"
-msgstr "没有找到"
+msgstr "Bulunamadı"
 
 #: src/groupchatconfig.html:108 src/userprops.html:145
 msgid "OK"
-msgstr "确定"
+msgstr "Tamam"
 
 #: src/help.html:23 src/help.html:79
 msgid "Online Status Indicators"
-msgstr "在线状态指示"
+msgstr "Çevrimiçi Durum Göstergeleri"
 
 #: src/joingroupchat.html:115 src/subscription.html:99
 msgid "Open Search"
-msgstr "打开搜索"
+msgstr "Aramayı Aç"
 
 #: NOT FOUND IN SOURCE
 msgid "Open the preferences dialog by clicking on <img src=\"images/screenshots/pref-button.gif\" width=\"24\" height=\"22\" alt=\"Preferences Button\">. Here's a short explanation for each option you can select:"
-msgstr "单击这个按钮 <img src=\"images/screenshots/pref-button.gif\" width=\"24\" height=\"22\" alt=\"属性\"> 打开属性窗口。下面是对相关选项的简要说明："
+msgstr "Seçenekleri açmak için butona tıklayınız <img src=\"images/screenshots/pref-button.gif\" width=\"24\" height=\"22\" alt=\"Seçenekler Butonu\">. Burada seçebileceğiniz herşey için kısa açıklamalar var."
 
 #: src/help.html:103
 msgid "Open the preferences dialog by clicking on the corresponding link at the bottom right of the interface. Here's a short explanation for each option you can select:"
-msgstr ""
+msgstr "Sağ alt köşedeki linki tıklayarak seçenekler penceresi açılabilir. Tüm ayarların kısa açıklamasını bulabilirsiniz:"
 
 #: src/options.html:506
 msgid "Options"
-msgstr "选项"
+msgstr "Seçenekler"
 
 #: src/vcard.html:155
 msgid "Organization"
-msgstr "组织"
+msgstr "Organizasyon"
 
 #: src/groupchat_roster.html:43
 msgid "Owner"
-msgstr "所有者"
+msgstr "Sahibi"
 
 #: src/groupchat_roster.html:43
 msgid "Owner List"
-msgstr "所有者列表"
+msgstr "Sahip Listesi"
 
 #: NOT FOUND IN SOURCE
 msgid "Pass"
-msgstr "密码"
+msgstr "Geç"
 
 #: src/editbookmarks.html:177 src/index.html:419 src/joingroupchat.html:122
 msgid "Password"
-msgstr "密码"
+msgstr "Parola"
 
 #: src/options.html:229
 msgid "Password changed successfully"
-msgstr ""
+msgstr "Parola başarıyla değiştirildi"
 
 #: src/jwchat.html:1527
 msgid "Password is missing.\\nAborting..."
-msgstr "密码错误！\\n中止。"
+msgstr "Parola eksik.\\nKapatılıyor..."
 
 #: src/options.html:215
 msgid "Passwords don't match"
-msgstr ""
+msgstr "Parolalar eşleşmiyor"
 
 #: src/search.html:290
 msgid "Perform search at"
-msgstr "执行搜索"
+msgstr "de arama yap"
 
 #: src/options.html:522
 msgid "Play sounds"
-msgstr "播放音效"
+msgstr "Sesleri çal"
 
 #: src/help.html:108
 msgid "Play sounds: If selected short jingles will play for certain actions like incoming messages or users going on- or offline."
-msgstr ""
+msgstr "Ses oynat: seçilen jinle mesaj aldığınızda yada bir kullanıcı durumunu değiştirdiğinde çalar."
 
 #: src/joingroupchat.html:18
 msgid "Please enter a channel/group to join"
-msgstr "请键入要加入的组"
+msgstr "Lütfen katılmak için grup/kanal seçiniz."
 
 #: src/editbookmarks.html:49
 msgid "Please enter a name for this bookmark!"
-msgstr "请键入此书签的名称"
+msgstr "Yer imi için lütfen bir isim giriniz!"
 
 #: src/editbookmarks.html:57
 msgid "Please enter a room to join"
-msgstr "请键入要加入的房间"
+msgstr "Lütfen bir odaya giriniz"
 
 #: src/editbookmarks.html:62 src/joingroupchat.html:22
 msgid "Please enter a server name"
-msgstr "请键入服务器名称"
+msgstr "Lütfen sunucu adını giriniz"
 
 #: src/index.html:446
 msgid "Port"
-msgstr "端口"
+msgstr "Port"
 
 #: src/vcard.html:149
 msgid "Postal Code"
-msgstr "邮政编码"
+msgstr "Posta kodu"
 
 #: src/roster.html:180
 msgid "Preferences"
-msgstr "属性"
+msgstr "Tercihler"
 
 #: src/iRoster.html:18 src/iRoster.html:27 src/iRoster.html:33
 msgid "Presence"
-msgstr "在线状态"
+msgstr "Durum"
 
 #: src/index.html:436
 msgid "Priority"
-msgstr "优先级"
+msgstr "Öncelik"
 
 #: src/searchrooms.html:29
 #. (conference_server)
 msgid "Querying %1. Please stand by..."
-msgstr "查询 %1，请稍候……"
+msgstr "%1 sorgulanıyor lütfen bekleyiniz ..."
 
 #: src/search.html:298 src/search.html:31
 msgid "Querying ..."
-msgstr "查询中……"
+msgstr "Sorgulanıyor ..."
 
 #: src/options.html:97
 msgid "Querying Service ...<br>Please stand by!"
-msgstr "查询服务，<br>请稍候……"
+msgstr "Sorgulama Servisi ...<br>Lütfen ayrılmayınız!"
 
 #: NOT FOUND IN SOURCE
 msgid "Querying Transport ...<br>Please stand by!"
-msgstr "查询传输，<br>请稍候……"
+msgstr "Taşıma Sorgulama ...<br>Lütfen ayrılmayınız!"
 
 #: src/message.html:133
 msgid "Quote"
-msgstr "引用"
+msgstr "Alıntı"
 
 #: src/options.html:526
 msgid "Raise window if a new message is received"
-msgstr "新消息到来时激活窗口"
+msgstr "Yeni mesaj alındığında pencere görünür"
 
 #: src/help.html:109
 msgid "Raise window if a new message is received: This will cause your contact list or your chat dialog to be raised over all other open windows if a new message arrives"
-msgstr ""
+msgstr "Yeni mesaj alındığında pencere görünür: kontak listeniz yada yeni mesaj penceresi tüm açık pencerelerin üzerinde belirir"
 
 #: src/groupchatconfig.html:36
 msgid "Really destroy this room?\\n\\nReason:"
-msgstr "确实要销毁这个房间吗？\\n\\n理由："
+msgstr "Gerçekten odayı yok etmeyi istiyormusunuz?\\n\\nSebep:"
 
 #: src/groupchat_invite.html:58 src/groupchat_invite.html:65 src/groupchat_invite_dialog.html:73 src/groupchat_modifylist.html:159
 msgid "Reason"
-msgstr "理由"
+msgstr "Sebep"
 
 #: src/userhist.html:175
 msgid "Refresh"
-msgstr "刷新"
+msgstr "Yenile"
 
 #: src/groupchat_bottom.html:277 src/options.html:158
 msgid "Register"
-msgstr "注册"
+msgstr "Kayıt ol"
 
 #: src/index.html:422
 msgid "Register New Account"
-msgstr "注册新账号"
+msgstr "Yeni Hesap"
 
 #: src/options.html:564 src/options.html:564
 msgid "Register at"
-msgstr "注册位置"
+msgstr "nde kayıt ol"
 
 #: src/jwchat.html:1035
 msgid "Registration failed!\\n\\nPlease choose a different username!"
-msgstr "注册失败！\\n\\n请换一个用户名！"
+msgstr "Kayıt başarısız!\\n\\nLütfen başka bir kullanıcı adı seçin!"
 
 #: NOT FOUND IN SOURCE
 msgid "Registration failed. You might want to choose another username."
-msgstr "注册失败！\\n\\n请换一个用户名！"
+msgstr "Kayıt başarısız. Başka bir kullanıcı adı seçmelisiniz."
 
 #: src/options.html:310
 msgid "Registration successful."
-msgstr "注册成功！"
+msgstr "Kayıt başarılı."
 
 #: src/iRoster.html:24
 msgid "Remove"
-msgstr "删除"
+msgstr "Sil"
 
 #: src/options.html:371
 msgid "Remove all associated contacts?"
-msgstr "删除所有相关联系人？"
+msgstr "ilişkili tüm kişileri sil?"
 
 #: src/help.html:74
 msgid "Remove: Removes this user from your contact list (completely) and revokes your authentication for him/her (if any)"
-msgstr "删除： 从您的联系人列表中彻底地去除这个用户，同时取消您对他/她的授权（如果有）"
+msgstr "Sil: Kullanıcıyı kişi listenizden kaldırın (tamamen) ve kimlik doğrulamasını kaldırın (varsa)"
 
 #: src/options.html:360
 #. (sJid)
 msgid "Removing %1 from roster..."
-msgstr "从联系人列表中删除 %1 ……"
+msgstr "%1 kişi listesinden siliniyor..."
 
 #: src/options.html:372
 msgid "Removing contacts..."
-msgstr "删除联系人 ……"
+msgstr "Kişiler siliniyor..."
 
 #: src/message.html:133
 msgid "Reply"
-msgstr "回复"
+msgstr "Yanıtla"
 
 #: src/options.html:282
 #. (sJid)
 msgid "Request sent to %1.."
-msgstr "发送请求到 %1……"
+msgstr "istek %1 'e gönderiliyor.."
 
 #: src/index.html:432
 msgid "Resource"
-msgstr "资源"
+msgstr "Kaynak"
 
 #: src/iRoster.html:23
 msgid "Resubscribe"
-msgstr "重新邀请"
+msgstr "Tekrar Abone"
 
 #: src/help.html:73
 msgid "Resubscribe: Opens a subscription request for this user"
-msgstr "重新邀请： 打开一个邀请此用户的对话框"
+msgstr "Tekrar Abone: Bu kullanıcı için abonelik isteği açar"
 
 #: src/groupchat_iroster.html:37
 msgid "Revoke Administrative Privilege"
-msgstr "取消管理权限"
+msgstr "idari ayrıcalıkları kaldır"
 
 #: src/groupchat_iroster.html:33
 msgid "Revoke Membership"
-msgstr "取消成员权限"
+msgstr "Üyeliği kaldır"
 
 #: NOT FOUND IN SOURCE
 msgid "Revoke Memebership"
-msgstr "取消成员权限"
+msgstr "Üyeliği kaldır"
 
 #: src/groupchat_iroster.html:35
 msgid "Revoke Moderator Privilege"
-msgstr "取消主持人权限"
+msgstr "Moderatör ayrıcalıklarını kaldır"
 
 #: src/groupchat_iroster.html:31
 msgid "Revoke Voice"
-msgstr "取消语音权限"
+msgstr "Sesi kaldır"
 
 #: src/vcard.html:160
 msgid "Role"
-msgstr "职务"
+msgstr "Rol"
 
 #: src/editbookmarks.html:175 src/groupchat_invite.html:56 src/joingroupchat.html:120 src/searchrooms.html:59
 msgid "Room"
-msgstr "房间"
+msgstr "Oda"
 
 #: src/help.html:54
 msgid "Safari since version 3"
-msgstr ""
+msgstr "versiyon 3'ten beri Safari"
 
 #: src/editbookmarks.html:185 src/groupchat_modifylist.html:312 src/vcard.html:174
 msgid "Save"
-msgstr "保存"
+msgstr "Kaydet"
 
 #: src/search.html:225 src/searchrooms.html:189
 msgid "Search"
-msgstr "搜索"
+msgstr "Ara"
 
 #: src/searchrooms.html:183
 msgid "Search Server"
-msgstr "搜索服务器"
+msgstr "Sunucu Ara"
 
 #: src/roster.html:172
 msgid "Search User"
-msgstr "搜索用户"
+msgstr "Kullanıcı Ara"
 
 #: src/joingroupchat.html:115 src/searchrooms.html:178
 msgid "Search for Rooms"
-msgstr "搜索房间"
+msgstr "Oda Ara"
 
 #: src/subscription.html:99
 msgid "Search for a User"
-msgstr "搜索用户"
+msgstr "Kullanıcı ara"
 
 #: src/search.html:124 src/search.html:141 src/search.html:90 src/searchrooms.html:28
 #. (conference_server)
 #. (iq.getFrom())
 msgid "Search results for %1"
-msgstr "对 %1 的搜索结果"
+msgstr "%1 için arama sonuçları"
 
 #: NOT FOUND IN SOURCE
 msgid "Select"
-msgstr "选择"
+msgstr "Seç"
 
 #: src/index.html:410
 msgid "Select Jabber server to connect to"
-msgstr "选择要连接的 Jabber 服务器"
+msgstr "e bağlanmak için Jabber sunucusu seçin"
 
 #: src/groupchat_invite_dialog.html:71
 msgid "Select User(s)"
-msgstr "选择用户"
+msgstr "Kullanıcı(ları) seçin"
 
 #: src/chat.html:322 src/groupchat_bottom.html:277 src/subscription.html:119
 msgid "Send"
-msgstr "发送"
+msgstr "Gönder"
 
 #: src/iRoster.html:17
 msgid "Send Message"
-msgstr "发送消息"
+msgstr "Mesaj Gönder"
 
 #: src/help.html:68
 msgid "Send Message: Opens the message dialog for this user"
-msgstr "发送消息： 为此用户打开消息对话框"
+msgstr "Mesaj Gönder: Bu kullanıcı için diyalog penceresi aç"
 
 #: src/send.html:72
 #. (srcW.roster.getUserByJID(jid).name)
 msgid "Send message to %1"
-msgstr "发送消息到 %1"
+msgstr "%1 'e mesaj gönder"
 
 #: src/subscription.html:57
 msgid "Send subscription"
-msgstr "发送邀请"
+msgstr "Abonelik gönder"
 
 #: src/subscription.html:102
 msgid "Send subscription to"
-msgstr "发送邀请到"
+msgstr "Eklemek istediginiz kullanıcı:"
 
 #: src/options.html:313
 msgid "Sending presence..."
-msgstr "发送在线状态……"
+msgstr "Varlığı gönderiliyor..."
 
 #: src/editbookmarks.html:176 src/index.html:410 src/joingroupchat.html:121
 msgid "Server"
-msgstr "服务器"
+msgstr "Sunucu"
 
 #: src/subscription.html:106
 msgid "Service (optional)"
-msgstr "服务（可选）"
+msgstr "Servis(isteğe bağlı)"
 
 #: src/jwchat.html:1038
 msgid "Service unavailable"
-msgstr "服务不可用"
+msgstr "Hizmet kullanılamıyor"
 
 #: src/changestatus.html:93
 msgid "Set"
-msgstr "设置"
+msgstr "Yap"
 
 #: NOT FOUND IN SOURCE
 msgid "Shange Status Message"
-msgstr "修改状态提示语"
+msgstr "Durum Mesajını değiştir"
 
 #: src/iRoster.html:32
 msgid "Show"
-msgstr "显示"
+msgstr "Göster"
 
 #: src/groupchat_iroster.html:39 src/iRoster.html:20 src/iRoster.html:29 src/iRoster.html:34
 msgid "Show Info"
-msgstr "显示信息"
+msgstr "Bilgi Göster"
 
 #: src/help.html:71
 msgid "Show Info: Show the user's profile"
-msgstr "显示信息： 显示用户档案"
+msgstr "Bilgi Göster: Kullanıcı Profilini göster"
 
 #: src/index.html:429 src/index.html:429
 msgid "Show Less Options"
-msgstr "显示常规选项"
+msgstr "Daha az seçenek göster"
 
 #: src/index.html:425 src/index.html:425
 msgid "Show More Options"
-msgstr "显示更多选项"
+msgstr "Daha çok seçenek göster"
 
 #: src/groupchat_iroster.html:26 src/iRoster.html:16 src/message.html:133
 msgid "Start Chat"
-msgstr "开始聊天"
+msgstr "Sohbeti başlat"
 
 #: src/help.html:69
 msgid "Start Chat: Opens a chat window for this user"
-msgstr "开始聊天： 为此用户打开聊天对话框"
+msgstr "Sohbeti Başlat: Bu kullanıcı için yeni bir sohbet penceresi açın"
 
 #: src/vcard.html:148
 msgid "State"
-msgstr "省/州"
+msgstr "Durum"
 
 #: src/roster.js:391 src/roster.js:456 src/roster.js:743
 msgid "Status"
-msgstr "状态"
+msgstr "Durum"
 
 #: src/changestatus.html:90
 msgid "Status Message"
-msgstr "状态提示语"
+msgstr "Durum Mesajı"
 
 #: src/error_message.html:101 src/message.html:128 src/send.html:99
 msgid "Subject"
-msgstr "主题"
+msgstr "Konu"
 
 #: src/groupchat_invite.html:76
 msgid "Submit"
-msgstr "提交"
+msgstr "Gönder"
 
 #: src/subscriptionRequest.html:49
 #. (jid)
 msgid "Subscribe request from %1"
-msgstr "从 %1 来的邀请请求"
+msgstr "%1 'den abonelik isteği"
 
 #: NOT FOUND IN SOURCE
 msgid "Subscribe request from %1:\\n%2"
-msgstr "从 %1 来的邀请请求：\\n%2"
+msgstr "%1 'den abonelik isteği:\\n%2"
 
 #: NOT FOUND IN SOURCE
 msgid "Support for safari coming soon..."
-msgstr "即将对 safari 提供支持……"
+msgstr "Safari için destek yakında geliyor ..."
 
 #: src/help.html:20 src/help.html:38
 msgid "Supported Browsers"
-msgstr "支持的浏览器"
+msgstr "Desteklenen tarayıcılar"
 
 #: src/help.html:40
 msgid "Supported browsers and plattforms"
-msgstr "支持的浏览器与平台"
+msgstr "Desteklenen tarayıcılar ve platformlar"
 
 #: src/roster.js:27
 msgid "System"
-msgstr "系统"
+msgstr "Sistem"
 
 #: src/help.html:16
 msgid "Table of Contents"
-msgstr "联系人列表"
+msgstr "İçerik tablosu"
 
 #: src/help.html:67
 msgid "The contact list holds entries for each user you have added. By right clicking on such an item you get a context menu as shown in the screenshot to the left:"
-msgstr "联系人列表中包含了您新增的每一个用户。鼠标右键单击用户项，您将看到如左图所示的上下文菜单："
+msgstr "Kişi listesi eklediğiniz her kullanıcı için girdileri tutar. Öğenin üzerine sağ tıklayarak ekranın solunda bağlam menüsünü görebilirsiniz."
 
 #: NOT FOUND IN SOURCE
 msgid "This will cause your contact list or your chat dialog to be raised over all other open windows if a new message arrives"
-msgstr "在新消息到来的时候，使您的联系人列表或消息窗口出现在其它窗口之上。"
+msgstr "Bu,yeni mesaj geldiğinde kişi listenizin veya sohbetin diğer bütün pencerelerin üstüne çıkmasına sebep olur."
 
 #: src/vcard.html:159
 msgid "Title"
-msgstr "头衔"
+msgstr "Başlık"
 
 #: src/groupchat_top.html:32
 msgid "Topic"
-msgstr "主题"
+msgstr "Konu"
 
 #: src/roster.js:159 src/userprops.html:78
 msgid "Unfiled"
-msgstr "未归类"
+msgstr "Dosyalanmamış"
 
 #: src/vcard.html:158
 msgid "Unit"
-msgstr "部门"
+msgstr "Birim"
 
 #: src/options.html:154
 msgid "Unregister"
-msgstr "注销"
+msgstr "Kayıtsız"
 
 #: src/options.html:326
 #. (sJid)
 msgid "Unregistering from service %1 ..."
-msgstr "从服务 %1 注销……"
+msgstr "Servis kaydı %1"
 
 #: src/options.html:156
 msgid "Update"
-msgstr "更新"
+msgstr "Güncelle"
 
 #: src/options.html:541
 msgid "Update interval"
-msgstr "更新间隔"
+msgstr "Güncelleme aralığı"
 
 #: NOT FOUND IN SOURCE
 msgid "Updating Roster..."
-msgstr "更新联系人……"
+msgstr "Liste Güncelleniyor"
 
 #: NOT FOUND IN SOURCE
 msgid "Use SSL"
-msgstr "使用 SSL"
+msgstr "SSL Kullan"
 
 #: NOT FOUND IN SOURCE
 msgid "Use the form below to log into jabber and start your own web based client. You don't need to install any software at all to use this program."
-msgstr ""
+msgstr "Jabber oturumu açmak veya kendi web tabanlı istemcinizi açmak için aşağıdaki formu kullanın. Bu programı kullanmak için başka bir yazılım yüklemeniz gerekmiyor."
 
 #: src/options.html:500
 msgid "User Directory"
-msgstr "用户目录"
+msgstr "Kullanıcı Dizini"
 
 #: NOT FOUND IN SOURCE
 msgid "User doesn't want to be disturbed"
-msgstr "用户不想被打扰"
+msgstr "Kullanıcı rahatsız edilmek istemiyor"
 
 #: NOT FOUND IN SOURCE
 msgid "User don't wants to be disturbed"
-msgstr "用户不想被打扰"
+msgstr "Kullanıcı rahatsız olmak istemiyor"
 
 #: src/help.html:85
 msgid "User hasn't authenticated you"
-msgstr "用户没有对您授权"
+msgstr "Kullanıcı seni yetkilendirmedi"
 
 #: src/help.html:82
 msgid "User is away"
-msgstr "用户离开了"
+msgstr "Kullanıcı dışarda"
 
 #: NOT FOUND IN SOURCE
 msgid "User is invisible"
-msgstr "用户隐身了"
+msgstr "Kullanıcı görünmez"
 
 #: NOT FOUND IN SOURCE
 msgid "User is not available"
-msgstr "用户不可用"
+msgstr "Kullanıcı uygun değil"
 
 #: src/help.html:83
 msgid "User is not available / User doesn't want to be disturbed"
-msgstr ""
+msgstr "Kullanıcı uygun değil / Kullanıcı rahatsız edilmek istemiyor"
 
 #: NOT FOUND IN SOURCE
 msgid "User is offline"
-msgstr "用户离线了"
+msgstr "Kullanıcı çevrimdışı"
 
 #: src/help.html:84
 msgid "User is offline / User is invisible"
-msgstr ""
+msgstr "Kullanıcı çevirimiçi değil / kullanıcı görünmez"
 
 #: NOT FOUND IN SOURCE
 msgid "User is online"
-msgstr "用户在线"
+msgstr "Kullanıcı çevrimiçi"
 
 #: src/help.html:81
 msgid "User is online / User is willing to chat"
-msgstr ""
+msgstr "Kullanıcı çevirimiçi / Kullanıcı sohbet için uygun"
 
 #: NOT FOUND IN SOURCE
 msgid "User is willing to chat"
-msgstr "用户欢迎您与之聊天"
+msgstr "Kullanıcı Sohbet yapmak istiyor"
 
 #: src/index.html:414
 msgid "Username"
-msgstr "用户名"
+msgstr "Kullanıcı Adı"
 
 #: src/index.html:417
 msgid "Username must not contain"
-msgstr "用户名不得包含"
+msgstr "Kullanıcı Adı İçermiyor"
 
 #: src/groupchat_roster.html:34
 msgid "Voice"
-msgstr "语音"
+msgstr "Ses"
 
 #: src/groupchat_roster.html:34
 msgid "Voice List"
-msgstr "语音列表"
+msgstr "Ses Listesi"
 
 #: src/vcard.html:138
 msgid "Web Site"
-msgstr "网站"
+msgstr "Web Sitesi"
 
 #: NOT FOUND IN SOURCE
 msgid "Welcome to"
-msgstr "欢迎光临"
+msgstr "e Hoş Geldiniz"
 
 #: src/index.html:395 src/index.html:4
 msgid "Welcome to JWChat"
-msgstr "欢迎光临 JWChat"
+msgstr "JWChat'e Hoş Geldiniz"
 
 #: src/index.html:249
 #. (SITENAME)
 msgid "Welcome to JWChat at %1"
-msgstr "欢迎光临 %1 上的 JWChat"
+msgstr "JWChat'e hoşgeldiniz %1"
 
 #: NOT FOUND IN SOURCE
 msgid "Welcome to JWChat at jwchat.org"
-msgstr "欢迎光临 jwchat.org 上的 JWChat"
+msgstr "JWChat'e hoşgeldiniz jwchat.org"
 
 #: NOT FOUND IN SOURCE
 msgid "Welcome to jabber.glubs.org"
-msgstr "欢迎光临 jabber.glubs.org"
+msgstr "jabber.glubs.org ' a hoşgeldiniz"
 
 #: NOT FOUND IN SOURCE
 msgid "Whether to pop up messages although your status is not \"available\" or \"chat\""
-msgstr "无论您的在线状态如何，您每次收到其他联系人的消息时，消息窗口都会自动打开。"
+msgstr "Durumunuz \"kullanılabilir\" veya \"sohbet\" olmasa bile mesajlar çıkabilir."
 
 #: NOT FOUND IN SOURCE
 msgid "Will display the time when a message arrived right to the users name in the chat dialog"
-msgstr "在消息窗口中，收到消息的同时将在用户名的旁边显示消息的时间。"
+msgstr "Kullanıcıya bir mesaj geldiğinde zamanı gösterecektir."
 
 #: src/options.html:124
 msgid "You are already registered at this service!"
-msgstr "您已经注册了这个服务！"
+msgstr "Hizmete zaten kayıtlısınız"
 
 #: NOT FOUND IN SOURCE
 msgid "You are already registered with this Gateway!"
-msgstr "您已经通过这个网关注册了！"
+msgstr "Ağ Geçidine zaten kayıtlısınız"
 
 #: NOT FOUND IN SOURCE
 msgid "You can create a new user group by entering a new name for \"Group\" at the \"Available Groups\" box followed by clicking on \"&gt;\".  Remove a user from a group by clicking on \"&lt;\". A group is deleted from your contact list if there is no user left for this group."
-msgstr "您可以通过在\"可用的组\"文本框中键入名称来新建一个用户组。单击\"&gt;\"新增组用户，单击\"&lt;\"删除组用户。如果一个组中没有用户了，它可以被删除。"
+msgstr "Sen \ için yeni bir ad girerek yeni bir kullanıcı grubu oluşturabilirsiniz \"Grubu\" \"Mevcut Grupları\" at tıklayarak takip kutusu \"&gt;\". \"&lt;\" Butonuna tıklayarak bir grup kullanıcıyı kaldırma. Bu grup için hiçbir kullanıcı varsa bir grup kişi listenizden silinir."
 
 #: src/help.html:97
 msgid "You can create a new user group by entering a new name for \"Group\" at the \"Available Groups\" box followed by clicking on \"&gt;\". Remove a user from a group by clicking on \"&lt;\". A group is deleted from your contact list if there is no user left for this group."
-msgstr "您可以通过在\"可用的组\"文本框中键入名称来新建一个用户组。单击\"&gt;\"新增组用户，单击\"&lt;\"删除组用户。如果一个组中没有用户了，它可以被删除。"
+msgstr "Yeni bir ad girerek yeni bir kullanıcı grubu oluşturabilirsiniz \"Grubu\" \"Mevcut Grupları \" at tıklayarak takip kutusu \"&gt;\". \"&lt;\" Butonuna tıklayarak bir grup kullanıcıyı kaldırma. Bu grup için hiçbir kullanıcı varsa bir grup kişi listenizden silinir."
 
 #: src/jwchat.html:697
 #. (presence.getFrom())
 msgid "You have been unsubscribed from %1"
-msgstr "您已经取消了来自 %1 的邀请"
+msgstr "%1 'e abone değilsiniz"
 
 #: src/index.html:102
 msgid "You need to supply a jabber server"
-msgstr "您需要提供一个 jabber 服务器"
+msgstr "Bir jabber sunucusu sağlamanız gerekmektedir"
 
 #: src/index.html:95
 msgid "You need to supply a password"
-msgstr "您需要提供一个密码"
+msgstr "Bir parola sağlamanız gerekmektedir"
 
 #: src/index.html:90
 msgid "You need to supply a username"
-msgstr "您需要提供一个用户名"
+msgstr "Bir kullanıcı adı sağlamanız gerekmektedir"
 
 #: src/help.html:21 src/help.html:64
 msgid "Your Contact List"
-msgstr "您的联系人列表"
+msgstr "Kişi Listeniz"
 
 #: src/jwchat.html:1574
 msgid "Your browser must support frames and javascript to use this application. Please refer to our <a href=\"help.html\">online manual</a> for a list of supported browser."
-msgstr "为使用本程序，您的浏览器必须支持帧与 javascript，请参考我们的 <a href=\"help.html\">帮助</a> 中的支持的浏览器列表。"
+msgstr "Bu uygulamayı kullanabilmeniz için tarayıcınızın çerçeveleri ve javascript'i desteklemesi gerekiyor. Lütfen buradan <a href=\"help.html\">online manual</a> destekleyen tarayıcıların listesine bakınız."
 
 #: src/changestatus.html:84 src/jwchat.html:77 src/status.html:12
 msgid "away"
-msgstr "离开"
+msgstr "dışarıda"
 
 #: src/search_iframe.html:17
 msgid "click to add user"
-msgstr "单击以新增用户"
+msgstr "Kullanıcı Eklemek için tıklayın"
 
 #: src/userhist_collections_iframe.html:29
 msgid "click to select collection"
-msgstr "单击以选择集合"
+msgstr "Koleksiyon seçmek için tıklayın"
 
 #: src/searchrooms_results_iframe.html:17
 msgid "click to select row"
-msgstr "单击以选择行"
+msgstr "Sırayı seçmek için tıklayın"
 
 #: src/groupchat_modifylist_iframe.html:26
 msgid "click to select user"
-msgstr "单击以选择用户"
+msgstr "Kullanıcı seçmek için tıklayın"
 
 #: NOT FOUND IN SOURCE
 msgid "coming soon... ;-)"
-msgstr "马上回来……"
+msgstr "yakında geliyor"
 
 #: src/changestatus.html:81 src/jwchat.html:79 src/status.html:14
 msgid "do not disturb"
-msgstr "请勿打扰"
+msgstr "rahatsız etmeyin"
 
 #: src/chat.html:164
 msgid "error starting chat"
-msgstr "开启聊天时出现错误"
+msgstr "sohbete başlarken hata"
 
 #: src/changestatus.html:80 src/jwchat.html:76 src/status.html:11
 msgid "free for chat"
-msgstr "欢迎聊天"
+msgstr "bedava sohbet"
 
 #: src/index.html:441
 msgid "high"
-msgstr "高"
+msgstr "yüksek"
 
 #: src/changestatus.html:85 src/jwchat.html:80
 msgid "invisible"
-msgstr "隐身"
+msgstr "görünmez"
 
 #: NOT FOUND IN SOURCE
 msgid "jid is missing.\\nAborting..."
-msgstr "JID 错误。\\n中止。"
+msgstr "jid eksik.\\nKapatılıyor..."
 
 #: src/subscription.html:108
 msgid "local jabber user"
-msgstr "本地 jabber 用户"
+msgstr "yerel jabber kullanıcısı"
 
 #: src/index.html:439
 msgid "low"
-msgstr "低"
+msgstr "düşük"
 
 #: src/index.html:440
 msgid "medium"
-msgstr "中"
+msgstr "orta"
 
 #: src/error_message.html:104 src/message.html:135
 msgid "next"
-msgstr "下一个"
+msgstr "sıradaki"
 
 #: src/changestatus.html:77 src/jwchat.html:78 src/status.html:13
 msgid "not available"
-msgstr "不可用"
+msgstr "uygun değil"
 
 #: src/changestatus.html:88 src/jwchat.html:81 src/status.html:18
 msgid "offline"
-msgstr "离线"
+msgstr "çevrimdışı"
 
 #: src/changestatus.html:76 src/jwchat.html:75 src/status.html:10
 msgid "online"
-msgstr "在线"
+msgstr "çevrimiçi"
 
 #: NOT FOUND IN SOURCE
 msgid "optional"
-msgstr "可选的"
+msgstr "seçimli"
 
 #: NOT FOUND IN SOURCE
 msgid "pass is missing.\\nAborting..."
-msgstr "密码错误。\\n中止。"
+msgstr "parola yanlış.\\nKapatılıyor..."
 
 #: src/error_message.html:104 src/message.html:135
 msgid "prev"
-msgstr "上一个"
+msgstr "önceki"
 
 #: src/subscriptionRequest.html:51
 #. (jid)
 msgid "show user info for %1"
-msgstr "显示用户 %1 的信息"
+msgstr "%1 için kullanıcı bilgilerini göster"
 
 #: src/searchrooms.html:19
 msgid "this doesn't look like a valid hostname"
-msgstr "这不是一个有效的主机名"
+msgstr "bu geçerli bir hostname değil"
 
 #: src/subscription.html:58
 msgid "to"
-msgstr "至"
+msgstr "e"
 
 #: src/subscriptionRequest.html:81
 msgid "wants to add you to his roster"
-msgstr "想加您为他/她的联系人"
+msgstr "sizi listesine eklemek istiyor"
 

@@ -179,17 +179,17 @@ msgstr ""
 "Chýba heslo.\\n"
 "Ukončujem..."
 
-#: src/jwchat.html:862
+#: src/jwchat.html:865
 #. (ouser.name)
 msgid "%1 has become available"
 msgstr "%1 sa stal(a) aktívny(a)"
 
-#: src/jwchat.html:823
+#: src/jwchat.html:826
 #. (ouser.name)
 msgid "%1 has been banned"
 msgstr "%1 bol(a) zakázaný(á)"
 
-#: src/jwchat.html:821
+#: src/jwchat.html:824
 #. (ouser.name,ouser.actor)
 msgid "%1 has been banned by %2"
 msgstr "%1 bol(a) zakázaný(á) - %2"
@@ -198,12 +198,12 @@ msgstr "%1 bol(a) zakázaný(á) - %2"
 msgid "%1 has been banned by %2: %3"
 msgstr "%1 bol(a) zakázaný(á) - %2: %3"
 
-#: src/jwchat.html:840
+#: src/jwchat.html:843
 #. (ouser.name)
 msgid "%1 has been kicked"
 msgstr "%1 bol(a) vykopnutý(á)"
 
-#: src/jwchat.html:838
+#: src/jwchat.html:841
 #. (ouser.name,ouser.actor)
 msgid "%1 has been kicked by %2"
 msgstr "%1 bol(a) vykopnutý(á) - %2"
@@ -212,26 +212,26 @@ msgstr "%1 bol(a) vykopnutý(á) - %2"
 msgid "%1 has been kicked by %2: %3"
 msgstr "%1 bol(a) vykopnutý(á) - %2: %3"
 
-#: src/jwchat.html:873
+#: src/jwchat.html:876
 #. (ouser.name)
 msgid "%1 has left"
 msgstr "%1 odišiel(a)"
 
-#: src/jwchat.html:793
+#: src/jwchat.html:796
 #. (ouser.name, htmlEnc(ouser.nick))
 msgid "%1 is now known as %2"
 msgstr "%1 je teraz známy(a) ako %2"
 
-#: src/roster.js:387 src/roster.js:452 src/roster.js:724
+#: src/roster.js:402 src/roster.js:467 src/roster.js:754
 #. ((user.messages.length + user.chatmsgs.length))
 msgid "%1 message(s) pending"
 msgstr "%1 správ čaká"
 
-#: src/search.html:295
+#: src/search.html:290
 msgid "- Choose Directory -"
 msgstr "- Vyberte adresár -"
 
-#: src/groupchat.html:93
+#: src/groupchat.html:96
 #. (msg.getSubject())
 msgid "/me has set the topic to: %1"
 msgstr "/me nastavil(a) tému na: %1"
@@ -240,19 +240,19 @@ msgstr "/me nastavil(a) tému na: %1"
 msgid "1 sec."
 msgstr "1 sek."
 
-#: src/options.html:533
+#: src/options.html:545
 msgid "10 sec."
 msgstr "10 sek."
 
-#: src/options.html:531
+#: src/options.html:543
 msgid "2 sec."
 msgstr "2 sek."
 
-#: src/options.html:534
+#: src/options.html:546
 msgid "30 sec."
 msgstr "30 sek."
 
-#: src/options.html:532
+#: src/options.html:544
 msgid "5 sec."
 msgstr "5 sek."
 
@@ -260,7 +260,7 @@ msgstr "5 sek."
 msgid "<span id=\"chan_count\">X</span> participants"
 msgstr "<span id=\"chan_count\">X</span> členov"
 
-#: src/jwchat.html:773
+#: src/jwchat.html:776
 msgid "A new room has been created but it awaits configuration from you. Do you want to do a custom configuration now?\\nNote: Click on 'Cancel' to start with a default configuration!"
 msgstr ""
 
@@ -268,31 +268,31 @@ msgstr ""
 msgid "A web-based Jabber<sup><small>&reg;</small></sup> client"
 msgstr "Web Jabber<sup><small>&reg;</small></sup> klient"
 
-#: src/options.html:488 src/vcard.html:164
+#: src/options.html:500 src/vcard.html:165
 msgid "About"
 msgstr "O"
 
-#: src/groupchat_modifylist.html:310
+#: src/groupchat_modifylist.html:312
 msgid "Add"
 msgstr "Pridať"
 
-#: src/roster.html:153
+#: src/roster.html:171
 msgid "Add Contact"
 msgstr "Pridať kontakt"
 
-#: src/help.html:97
+#: src/help.html:91
 msgid "Add an user by clicking on <img src=\"images/screenshots/add-button.gif\" width=\"24\" height=\"22\" alt=\"Add User Button\">. Enter the user's nickname in the subscription field and click \"Send\". Additionally you can enter a custom message in the textarea below. A subscription request with this message is sent to the user. If he or she accepts you can see his/her <a href=\"#status\">online status</a> from now on."
 msgstr "Pridať používateľa kliknutím na <img src=\"images/screenshots/add-button.gif\" width=\"24\" height=\"22\" alt=\"Tlačidlo pre pridanie používateľa\">. Vložte používateľovu prezývku do formulára a kliknite na \"Odoslať\". Prípadne môžete pridať aj vysvetľujúcu správu, ktorá sa používateľovi zobrazí. Požiadavka o zapísanie bude odoslaná tomuto používateľovi. Ak on alebo ona akceptujú požiadavku, budete môct vidieť jej/jeho <a href=\"#status\">online stav</a>."
 
-#: src/help.html:24 src/help.html:95
+#: src/help.html:24 src/help.html:89
 msgid "Adding an User to your Contact List"
 msgstr "Pridať používateľa do vášho zoznamu"
 
-#: src/vcard.html:142 src/vcard.html:144
+#: src/vcard.html:143 src/vcard.html:145
 msgid "Address"
 msgstr "Adresa"
 
-#: src/vcard.html:145
+#: src/vcard.html:146
 msgid "Address2"
 msgstr "Adresa2"
 
@@ -308,7 +308,7 @@ msgstr "Zoznam adminov"
 msgid "Advise connection manager to connect through SSL"
 msgstr ""
 
-#: src/help.html:100
+#: src/help.html:94
 msgid "After having sent this subscription request the user is added to your contact list and an edit user dialog pops up where you can set your custom nickname for this user and add him/her to one or more groups in your contact list."
 msgstr "Po odoslaní požiadavky na zapísanie je používateľ pridaný do vášho kontakt listu a prípadne môžete nastaviť preňho prezývku a priradiť jeho/ju do jednej alebo viacerých skupín kontaktov."
 
@@ -324,7 +324,7 @@ msgstr ""
 msgid "An Error Occured!"
 msgstr "Vyskytla sa chyba!"
 
-#: src/search.html:198
+#: src/search.html:193
 msgid "An Error Occured\\nAborting..."
 msgstr ""
 
@@ -336,7 +336,7 @@ msgstr "Vyskytla sa chyba"
 msgid "An Error occured ..."
 msgstr "Vyskytla sa chyba ..."
 
-#: src/search.html:78
+#: src/search.html:73
 msgid "An error has occured"
 msgstr "Vyskytla sa chyba"
 
@@ -353,27 +353,35 @@ msgstr ""
 msgid "Annotations for %1"
 msgstr "Vysvetlivka pre %1"
 
-#: src/userhist.html:103
+#: src/userhist.html:105
 msgid "Are you sure you want to delete this chat history completely?"
 msgstr "Ste si skutočne istý(á), že chcete zmazať kompletnú históriu rozhovoru?"
 
-#: src/jwchat.html:1027
+#: src/jwchat.html:1030
 msgid "Authorization failed"
 msgstr "Neúspešná autorizácia"
 
-#: src/help.html:115 src/options.html:506
+#: src/options.html:518
 msgid "Auto-Pop-Up if away"
 msgstr "Auto-Pop-Up ak som preč"
 
-#: src/editbookmarks.html:177
+#: src/help.html:107
+msgid "Auto-Pop-Up if away: Whether to pop up messages although your status is not \"available\" or \"chat\""
+msgstr ""
+
+#: src/editbookmarks.html:178
 msgid "Autojoin"
 msgstr "Automatické pripojenie"
 
-#: src/help.html:113 src/options.html:502
+#: src/options.html:514
 msgid "Automatically open messages and chats"
 msgstr "Automaticky otvor správu a rozhovor"
 
-#: src/userprops.html:123
+#: src/help.html:106
+msgid "Automatically open messages and chats: If selected each time you get a message from an other user the corresponding dialog pops up automatically."
+msgstr ""
+
+#: src/userprops.html:122
 msgid "Available groups"
 msgstr "Dostupné skupiny"
 
@@ -385,7 +393,7 @@ msgstr "Späť"
 msgid "Bad Request"
 msgstr "Zlá požiadavka"
 
-#: src/groupchat_iroster.html:27 src/groupchat_roster.html:36
+#: src/groupchat_iroster.html:29 src/groupchat_roster.html:36
 msgid "Ban"
 msgstr "Zakázať"
 
@@ -393,11 +401,11 @@ msgstr "Zakázať"
 msgid "Ban List"
 msgstr "Čierna listina"
 
-#: src/vcard.html:166
+#: src/vcard.html:167
 msgid "Birthday"
 msgstr "Narodeniny"
 
-#: src/editbookmarks.html:169 src/joingroupchat.html:116 src/searchrooms.html:202
+#: src/editbookmarks.html:170 src/joingroupchat.html:117 src/searchrooms.html:202
 msgid "Bookmark"
 msgstr "Záložka"
 
@@ -409,27 +417,27 @@ msgstr "Camino 0.7"
 msgid "Can't display User Info:\\nUser not local!"
 msgstr ""
 
-#: src/changestatus.html:92 src/editbookmarks.html:184 src/groupchatconfig.html:108 src/joingroupchat.html:125 src/send.html:104 src/subscription.html:120 src/userprops.html:146 src/vcard.html:175
+#: src/changestatus.html:93 src/editbookmarks.html:185 src/groupchatconfig.html:108 src/joingroupchat.html:126 src/subscription.html:119 src/userprops.html:145 src/vcard.html:174
 msgid "Cancel"
 msgstr "Zrušiť"
 
-#: src/roster.html:145
+#: src/roster.html:149
 msgid "Change Online Status"
 msgstr "Zmeniť online stav"
 
-#: src/options.html:488
+#: src/options.html:500
 msgid "Change Password"
 msgstr ""
 
-#: src/roster.html:146
+#: src/roster.html:152
 msgid "Change Status Message"
 msgstr "Zmeniť správu o stave"
 
-#: src/roster.html:145
+#: src/roster.html:151
 msgid "Change User Info"
 msgstr "Zmeniť informácie o používateľovi"
 
-#: src/help.html:93
+#: src/help.html:87
 msgid "Change your own online setting by choosing a state from the select box at the bottom of your contact list. For some states you can set a custom status message which is displayed to other users. If you choose \"invisible\" you appear to be offline to other users."
 msgstr "Zmente svoje online nastavenie vybratím stavu z výberového okna na spodku vášho zoznamu kontaktov. Pre niektoré zo stavuv je možné nastaviť si vlastnú správu o stave, ktorá bude zobrazovaná ostatným používateľom. Ak si zvolíte \"neviditeľný(á)\" budete sa ostatným používateľom javiť ako offline."
 
@@ -437,16 +445,16 @@ msgstr "Zmente svoje online nastavenie vybratím stavu z výberového okna na sp
 msgid "Channel/Group"
 msgstr "Zrušiť/Skupina"
 
-#: src/groupchat.html:271 src/jwchat.html:95
+#: src/groupchat.html:274 src/jwchat.html:96
 msgid "Chat Rooms"
 msgstr "Diskusné miestnosti"
 
-#: src/userhist.html:138
+#: src/userhist.html:140
 #. (user.name)
 msgid "Chat history for %1"
 msgstr "História rozhovoru pre %1"
 
-#: src/chat.html:171
+#: src/chat.html:172
 #. (user.name)
 msgid "Chat with %1"
 msgstr "Rozhovor s %1"
@@ -455,27 +463,27 @@ msgstr "Rozhovor s %1"
 msgid "Choose Backend"
 msgstr "Vybrať rozhranie"
 
-#: src/editbookmarks.html:169 src/joingroupchat.html:116
+#: src/editbookmarks.html:170 src/joingroupchat.html:117
 msgid "Choose Bookmark"
 msgstr "Vybrať záložku"
 
-#: src/options.html:552
+#: src/options.html:564
 msgid "Choose Directory"
 msgstr "Vybrať adresár"
 
-#: src/options.html:552
+#: src/options.html:564
 msgid "Choose Gateway"
 msgstr "Vybrať bránu"
 
-#: src/vcard.html:146
+#: src/vcard.html:147
 msgid "City"
 msgstr "Mesto"
 
-#: src/chat.html:308
+#: src/chat.html:310
 msgid "Click to show user's vcard"
 msgstr "Kliknite pre zobrazenie používateľovej vizitky"
 
-#: src/error_message.html:103 src/message.html:134
+#: src/error_message.html:104 src/message.html:135
 msgid "Close"
 msgstr "Zatvoriť"
 
@@ -495,19 +503,19 @@ msgstr ""
 msgid "Couldn't log in!\\nCreate new account?"
 msgstr ""
 
-#: src/vcard.html:149
+#: src/vcard.html:150
 msgid "Country"
 msgstr "Krajina"
 
-#: src/userprops.html:136
+#: src/userprops.html:135
 msgid "Current groups"
 msgstr "Aktuálne skupiny"
 
-#: src/help.html:106 src/help.html:26
+#: src/help.html:101 src/help.html:26
 msgid "Customizing (Your Preferences)"
 msgstr "Úprava (vaše nastavenia)"
 
-#: src/error_message.html:99 src/message.html:128
+#: src/error_message.html:100 src/message.html:129
 msgid "Date"
 msgstr "Dátum"
 
@@ -515,7 +523,7 @@ msgstr "Dátum"
 msgid "Decline"
 msgstr "Znížiť"
 
-#: src/groupchat_modifylist.html:310 src/userhist.html:173
+#: src/groupchat_modifylist.html:312 src/userhist.html:175
 msgid "Delete"
 msgstr "Zmazať"
 
@@ -531,51 +539,55 @@ msgstr "Popis"
 msgid "Destroy"
 msgstr "Zničiť"
 
-#: src/groupchat.html:133
+#: src/groupchat.html:136
 msgid "Disconnected."
 msgstr "Odpojený."
 
-#: src/jwchat.html:1058
+#: src/jwchat.html:1061
 msgid "Disconnected\\n\\nReconnect?"
 msgstr ""
 
-#: src/options.html:518
+#: src/options.html:530
 msgid "Display timestamps in chat windows"
 msgstr "Zobraziť čas v diskusných oknách"
 
-#: src/help.html:121
+#: NOT FOUND IN SOURCE
 msgid "Display timestamps in one-to-one chats"
 msgstr "Zobraziť čas pri rozhovore"
+
+#: src/help.html:110
+msgid "Display timestamps in one-to-one chats: Will display the time when a message arrived right to the users name in the chat dialog"
+msgstr ""
 
 #: src/options.html:319 src/options.html:359 src/options.html:387
 msgid "Done."
 msgstr "Hotovo."
 
-#: src/vcard.html:136
+#: src/vcard.html:137
 msgid "E-mail"
 msgstr "E-mail"
 
-#: src/iRoster.html:27 src/joingroupchat.html:116
+#: src/iRoster.html:28 src/joingroupchat.html:117
 msgid "Edit"
 msgstr "Upraviť"
 
-#: src/iRoster.html:21
+#: src/iRoster.html:22
 msgid "Edit Note"
 msgstr "Upraviť poznámku"
 
-#: src/iRoster.html:18
+#: src/iRoster.html:19
 msgid "Edit User"
 msgstr "Upraviť používateľa"
 
-#: src/help.html:72
+#: src/help.html:70
 msgid "Edit User: Opens the edit dialog for this user where you can set his nickname and change the groups he/she belongs to"
 msgstr "Upraviť používateľa: Otvorí dialógové okno, v ktorom môžete nastaviť prezývku a zmeniť jeho/jej zaradenie do skupín"
 
-#: src/userprops.html:118
+#: src/userprops.html:117
 msgid "Edit groups for <span id=\"groupjid\"></span>"
 msgstr "Upraviť skupiny pre <span id=\"groupjid\"></span>"
 
-#: src/userprops.html:110
+#: src/userprops.html:109
 msgid "Edit nickname for <span id=\"nickjid\"></span>"
 msgstr "Upraviť prezývku pre <span id=\"nickjid\"></span>"
 
@@ -583,16 +595,16 @@ msgstr "Upraviť prezývku pre <span id=\"nickjid\"></span>"
 msgid "Edit properties for "
 msgstr "Upraviť vlastnosti pre"
 
-#: src/userprops.html:66
+#: src/userprops.html:65
 #. (jid)
 msgid "Edit properties for %1"
 msgstr "Upraviť vlastnosti pre %1"
 
-#: src/options.html:522
+#: src/options.html:534
 msgid "Enable logging of messages"
 msgstr "Zapnúť zaznamenávanie správ"
 
-#: src/error_message.html:84 src/error_message.html:97 src/groupchat_modifylist.html:61 src/options.html:289 src/options.html:338
+#: src/error_message.html:85 src/error_message.html:98 src/groupchat_modifylist.html:61 src/options.html:289 src/options.html:338
 msgid "Error"
 msgstr "Chyba"
 
@@ -600,7 +612,7 @@ msgstr "Chyba"
 msgid "Error saving roster preferences"
 msgstr "Chyba ukladania nastavení zoznamu"
 
-#: src/vcard.html:127
+#: src/vcard.html:128
 msgid "Family Name"
 msgstr "Priezvisko"
 
@@ -612,7 +624,7 @@ msgstr "Dokončené."
 msgid "For details please visit <a href=\"http://jwchat.sourceforge.net\">JWChat's Homepage</a>."
 msgstr "Pre podrobnejšie informácie navštívte <a href=\"http://jwchat.sourceforge.net\">domovskú stránku JWChat</a>."
 
-#: src/groupchat.html:173
+#: src/groupchat.html:176
 msgid "Forbidden"
 msgstr "Zakázaný"
 
@@ -620,7 +632,7 @@ msgstr "Zakázaný"
 msgid "From"
 msgstr "Od"
 
-#: src/vcard.html:126
+#: src/vcard.html:127
 msgid "Full Name"
 msgstr "Celé meno"
 
@@ -628,31 +640,31 @@ msgstr "Celé meno"
 msgid "Gateway"
 msgstr "Braná"
 
-#: src/options.html:488 src/roster.js:304 src/roster.js:333 src/roster.js:355 src/roster.js:422 src/roster.js:427 src/roster.js:560
+#: src/options.html:500 src/roster.js:310 src/roster.js:348 src/roster.js:370 src/roster.js:437 src/roster.js:442 src/roster.js:582
 msgid "Gateways"
 msgstr "Brany"
 
-#: src/options.html:488
+#: src/options.html:500
 msgid "General"
 msgstr "Všeobecné"
 
-#: src/groupchat_iroster.html:34
+#: src/groupchat_iroster.html:36
 msgid "Grant Administrative Privilege"
 msgstr "Prideliť administrátorské oprávnenia"
 
-#: src/groupchat_iroster.html:30
+#: src/groupchat_iroster.html:32
 msgid "Grant Membership"
 msgstr "Prideliť členstvo"
 
-#: src/groupchat_iroster.html:32
+#: src/groupchat_iroster.html:34
 msgid "Grant Moderator Privilege"
 msgstr "Prideliť moderátorské oprávnenia"
 
-#: src/groupchat_iroster.html:28
+#: src/groupchat_iroster.html:30
 msgid "Grant Voice"
 msgstr "Prideliť hlas"
 
-#: src/userprops.html:126
+#: src/userprops.html:125
 msgid "Group"
 msgstr "Skupina"
 
@@ -660,27 +672,31 @@ msgstr "Skupina"
 msgid "Groupchat Invitation"
 msgstr "Pozvánka do skupinovej diskusie"
 
-#: src/roster.html:141
+#: src/roster.html:184
 msgid "Help"
 msgstr "Pomoc"
 
-#: src/help.html:111 src/options.html:498
+#: src/options.html:510
 msgid "Hide offline users"
 msgstr "Skryť offline používateľov"
 
-#: src/help.html:112
+#: src/help.html:105
+msgid "Hide offline users: Hides users who are not online from your contact list."
+msgstr ""
+
+#: NOT FOUND IN SOURCE
 msgid "Hides users who are not online from your contact list."
 msgstr "Skryť používateľov, ktorý nie sú online vo vašom zozname kontaktov."
 
-#: src/chat.html:310 src/iRoster.html:20
+#: src/chat.html:312 src/iRoster.html:21
 msgid "History"
 msgstr "História"
 
-#: src/help.html:74
+#: src/help.html:72
 msgid "History: Opens the message history for this user"
 msgstr "História: Otvorí sa história správ pre tohoto používateľa"
 
-#: src/subscription.html:114
+#: src/subscription.html:113
 msgid "I would like to add you to my roster."
 msgstr "Chcem si vás pridať do svojho zoznamu."
 
@@ -688,11 +704,11 @@ msgstr "Chcem si vás pridať do svojho zoznamu."
 msgid "If don't have an account yet a new one will be created automatically for you on login (Note: If it fails to register this username might be taken already. Try to choose something else)."
 msgstr "Ak nemáte účet, nový účet bude pre vás automaticky vytvorený so zadaným prihlasovacím menom (Poznámka: Ak bude registrácia neúspešná, môže to znamenať, že už je takéto meno používané niekým iným)."
 
-#: src/help.html:114
+#: NOT FOUND IN SOURCE
 msgid "If selected each time you get a message from an other user the corresponding dialog pops up automatically."
 msgstr "Ak je zaškrtnuté, potom zakaždým, keď vám niekto napíše automaticky sa vám zobrazí príslušné okno."
 
-#: src/help.html:118
+#: NOT FOUND IN SOURCE
 msgid "If selected short jingles will play for certain actions like incoming messages or users going on- or offline."
 msgstr "Ak je zaškrtnuté, potom bude pri každej udalosti, ako napríklad pri prijatí správy, zahratý krátky zvuk."
 
@@ -704,11 +720,11 @@ msgstr "Ak nemáte účet, nový účet bude pre vás vytvorený, ak zaškrtnete
 msgid "If you want to learn more about JWChat please visit our homepage at <a href=\"http://jwchat.sourceforge.net\">http://jwchat.sourceforge.net</a>!"
 msgstr "Ak sa chcete dozvedieť viac o projekte JWChat, prosím navštívte našu domovskú stránku na adrese <a href=\"http://jwchat.sourceforge.net\">http://jwchat.sourceforge.net</a>!"
 
-#: src/vcard.html:134
+#: src/vcard.html:135
 msgid "Information"
 msgstr "Informácie"
 
-#: src/jwchat.html:1039
+#: src/jwchat.html:1042
 msgid "Internal Server Error.\\n\\nDisconnected.\\n\\nReconnect?"
 msgstr ""
 
@@ -721,7 +737,7 @@ msgstr "Úvod"
 msgid "Invalid JID\\n'%1' not allowed in JID.\\nChoose another one!"
 msgstr ""
 
-#: src/changestatus.html:84 src/status.html:15
+#: src/status.html:15
 msgid "Invisible"
 msgstr "Neviditeľný(á)"
 
@@ -743,11 +759,11 @@ msgstr "Pozvať používateľov do %1"
 msgid "JID"
 msgstr "JID"
 
-#: src/jwchat.html:1519 src/userhist.html:132
+#: src/jwchat.html:1523 src/userhist.html:134
 msgid "JID is missing.\\nAborting..."
 msgstr ""
 
-#: src/subscription.html:19
+#: src/subscription.html:20
 msgid "JID missing"
 msgstr "JID chýba"
 
@@ -871,19 +887,19 @@ msgstr "JWChat je webový jabber klient. <a href=\"http://www.jabber.org\">Jabbe
 msgid "JWChat is a web based, full featured jabber client. <a href=\"http://www.jabber.org\">Jabber</a> is an advanced instant messaging system comparable to ICQ, AOL Instant Messenger or Yahoo!Messenger."
 msgstr "JWChat je webový jabber klient. <a href=\"http://www.jabber.org\">Jabber</a> je vysoko kvalitný komunikačný server, s ktorým je možné porovnať ICQ, AOL Instant Messenger alebo Yahoo!Messenger."
 
-#: src/groupchat_invite.html:63 src/joingroupchat.html:125 src/searchrooms.html:202
+#: src/groupchat_invite.html:63 src/joingroupchat.html:126 src/searchrooms.html:202
 msgid "Join"
 msgstr "Pripojiť"
 
-#: src/roster.html:153
+#: src/roster.html:173
 msgid "Join Groupchat"
 msgstr "Pripojiť k skupinovému rozhovoru"
 
-#: src/groupchat_iroster.html:26
+#: src/groupchat_iroster.html:28
 msgid "Kick"
 msgstr "Vykopnúť"
 
-#: src/help.html:79
+#: src/help.html:76
 msgid "Left clicking an user pops up a message dialog."
 msgstr "Kliknutím ľavým tlačidlom sa zobrazí dialóg s používateľom."
 
@@ -899,7 +915,7 @@ msgstr "Prihlasovacie meno"
 msgid "Login failed. Wrong password?"
 msgstr "Prihlasovanie zlyhalo. Zlé heslo?"
 
-#: src/help.html:43
+#: src/help.html:44
 msgid "MS Internet Explorer since version 5.0"
 msgstr "MS Internet Explorer od verzie 5.0"
 
@@ -911,11 +927,11 @@ msgstr "Člen"
 msgid "Member List"
 msgstr "Zoznam členov"
 
-#: src/roster.js:381 src/roster.js:446 src/roster.js:718
+#: src/roster.js:396 src/roster.js:461 src/roster.js:748
 msgid "Message"
 msgstr "Správa"
 
-#: src/message.html:114
+#: src/message.html:115
 #. (user.name)
 msgid "Message from %1"
 msgstr "Správa od %1"
@@ -928,7 +944,7 @@ msgstr "Moderátor"
 msgid "Moderator List"
 msgstr "Zoznam moderátorov"
 
-#: src/groupchat_modifylist.html:264
+#: src/groupchat_modifylist.html:266
 #. (args[2])
 msgid "Modify %1"
 msgstr "Upraviť %1"
@@ -937,27 +953,31 @@ msgstr "Upraviť %1"
 msgid "Modify List"
 msgstr "Upraviť zoznam"
 
-#: src/help.html:45 src/help.html:52
+#: src/help.html:46 src/help.html:52
 msgid "Mozilla (stable) since version 1.0.2"
 msgstr "Mozilla (stable) od verzie 1.0.2"
 
-#: src/help.html:60
+#: src/help.html:59
 msgid "Mozilla et al since version 1.0.2"
 msgstr ""
 
-#: src/editbookmarks.html:171 src/vcard.html:124 src/vcard.html:128 src/vcard.html:156
+#: src/editbookmarks.html:172 src/vcard.html:125 src/vcard.html:129 src/vcard.html:157
 msgid "Name"
 msgstr "Meno"
 
-#: src/help.html:44
+#: NOT FOUND IN SOURCE
 msgid "Netscape version 6 & 7"
 msgstr "Netscape verzia 6 & 7"
+
+#: src/help.html:45
+msgid "Netscape version 6 &amp; 7"
+msgstr ""
 
 #: src/groupchat_modifylist.html:159
 msgid "Nick"
 msgstr "Prezývka"
 
-#: src/editbookmarks.html:173 src/joingroupchat.html:118 src/userprops.html:113 src/vcard.html:129
+#: src/editbookmarks.html:174 src/joingroupchat.html:119 src/userprops.html:112 src/vcard.html:130
 msgid "Nickname"
 msgstr "Prezývka"
 
@@ -973,35 +993,39 @@ msgstr "Žiadna prezývka"
 msgid "None Given"
 msgstr "Neuvedené"
 
-#: src/groupchat.html:170
+#: src/groupchat.html:173
 msgid "Not Allowed"
 msgstr "Nedovolené"
 
-#: src/groupchat.html:176
+#: src/groupchat.html:179
 msgid "Not Found"
 msgstr "Nenájdené"
 
-#: src/groupchatconfig.html:108 src/userprops.html:146
+#: src/groupchatconfig.html:108 src/userprops.html:145
 msgid "OK"
 msgstr "OK"
 
-#: src/help.html:23 src/help.html:82
+#: src/help.html:23 src/help.html:79
 msgid "Online Status Indicators"
 msgstr "Indikátor online stavu"
 
-#: src/joingroupchat.html:114 src/subscription.html:100
+#: src/joingroupchat.html:115 src/subscription.html:99
 msgid "Open Search"
 msgstr "Otvoriť hľadanie"
 
-#: src/help.html:108
+#: NOT FOUND IN SOURCE
 msgid "Open the preferences dialog by clicking on <img src=\"images/screenshots/pref-button.gif\" width=\"24\" height=\"22\" alt=\"Preferences Button\">. Here's a short explanation for each option you can select:"
 msgstr "Otvorí sa dialóg s nastaveniami po kliknutí na <img src=\"images/screenshots/pref-button.gif\" width=\"24\" height=\"22\" alt=\"Tlačidlo nastavní\">. Tu je krátke vysvetlenie možností, ktoré môžete vybrať:"
 
-#: src/options.html:494
+#: src/help.html:103
+msgid "Open the preferences dialog by clicking on the corresponding link at the bottom right of the interface. Here's a short explanation for each option you can select:"
+msgstr ""
+
+#: src/options.html:506
 msgid "Options"
 msgstr "Nastavenia"
 
-#: src/vcard.html:154
+#: src/vcard.html:155
 msgid "Organization"
 msgstr "Organizácia"
 
@@ -1017,7 +1041,7 @@ msgstr "Zoznam vlastníkov"
 msgid "Pass"
 msgstr "Heslo"
 
-#: src/editbookmarks.html:176 src/index.html:419 src/joingroupchat.html:121
+#: src/editbookmarks.html:177 src/index.html:419 src/joingroupchat.html:122
 msgid "Password"
 msgstr "Heslo"
 
@@ -1025,7 +1049,7 @@ msgstr "Heslo"
 msgid "Password changed successfully"
 msgstr ""
 
-#: src/jwchat.html:1523
+#: src/jwchat.html:1527
 msgid "Password is missing.\\nAborting..."
 msgstr ""
 
@@ -1033,27 +1057,31 @@ msgstr ""
 msgid "Passwords don't match"
 msgstr ""
 
-#: src/search.html:295
+#: src/search.html:290
 msgid "Perform search at"
 msgstr "Vyhľadaj na"
 
-#: src/help.html:117 src/options.html:510
+#: src/options.html:522
 msgid "Play sounds"
 msgstr "Prehrávať zvuky"
 
-#: src/joingroupchat.html:17
+#: src/help.html:108
+msgid "Play sounds: If selected short jingles will play for certain actions like incoming messages or users going on- or offline."
+msgstr ""
+
+#: src/joingroupchat.html:18
 msgid "Please enter a channel/group to join"
 msgstr "Prosím zadajte kanál/skupinu, do ktorej sa chcete pripojiť"
 
-#: src/editbookmarks.html:48
+#: src/editbookmarks.html:49
 msgid "Please enter a name for this bookmark!"
 msgstr "Prosím zadajte meno pre túto záložku!"
 
-#: src/editbookmarks.html:56
+#: src/editbookmarks.html:57
 msgid "Please enter a room to join"
 msgstr "Prosím zadajte miestnosť, do ktorej chcete vstúpiť"
 
-#: src/editbookmarks.html:61 src/joingroupchat.html:21
+#: src/editbookmarks.html:62 src/joingroupchat.html:22
 msgid "Please enter a server name"
 msgstr "Prosím zadajte meno servera"
 
@@ -1061,15 +1089,15 @@ msgstr "Prosím zadajte meno servera"
 msgid "Port"
 msgstr ""
 
-#: src/vcard.html:148
+#: src/vcard.html:149
 msgid "Postal Code"
 msgstr "PSČ"
 
-#: src/roster.html:141
+#: src/roster.html:180
 msgid "Preferences"
 msgstr "Nastavenia"
 
-#: src/iRoster.html:17 src/iRoster.html:26 src/iRoster.html:32
+#: src/iRoster.html:18 src/iRoster.html:27 src/iRoster.html:33
 msgid "Presence"
 msgstr "Prítomný"
 
@@ -1082,7 +1110,7 @@ msgstr "Priorita"
 msgid "Querying %1. Please stand by..."
 msgstr "Zasielanie požiadavky %1. Prosím čakajte..."
 
-#: src/search.html:303 src/search.html:31
+#: src/search.html:298 src/search.html:31
 msgid "Querying ..."
 msgstr "Zasielanie požiadavky..."
 
@@ -1094,13 +1122,17 @@ msgstr "Zisťovanie dostupných služieb ...<br>Prosím čakajte!"
 msgid "Querying Transport ...<br>Please stand by!"
 msgstr "Zisťovanie transportov ...<br>Prosím čakajte!"
 
-#: src/message.html:132
+#: src/message.html:133
 msgid "Quote"
 msgstr "Citovať"
 
-#: src/help.html:119 src/options.html:514
+#: src/options.html:526
 msgid "Raise window if a new message is received"
 msgstr "Zobraziť okno pri prijatí novej správy"
+
+#: src/help.html:109
+msgid "Raise window if a new message is received: This will cause your contact list or your chat dialog to be raised over all other open windows if a new message arrives"
+msgstr ""
 
 #: src/groupchatconfig.html:36
 msgid "Really destroy this room?\\n\\nReason:"
@@ -1110,7 +1142,7 @@ msgstr ""
 msgid "Reason"
 msgstr "Dôvod"
 
-#: src/userhist.html:173
+#: src/userhist.html:175
 msgid "Refresh"
 msgstr "Obnoviť"
 
@@ -1122,11 +1154,11 @@ msgstr "Registrovať"
 msgid "Register New Account"
 msgstr "Registrovať účet"
 
-#: src/options.html:552 src/options.html:552
+#: src/options.html:564 src/options.html:564
 msgid "Register at"
 msgstr "Registrovať na"
 
-#: src/jwchat.html:1032
+#: src/jwchat.html:1035
 msgid "Registration failed!\\n\\nPlease choose a different username!"
 msgstr ""
 
@@ -1138,7 +1170,7 @@ msgstr "Registrácia zlyhala. Môžete skúsiť zvoliť si iné používateľsk�
 msgid "Registration successful."
 msgstr "Registrácia bola úspešná."
 
-#: src/iRoster.html:23
+#: src/iRoster.html:24
 msgid "Remove"
 msgstr "Odstrániť"
 
@@ -1146,7 +1178,7 @@ msgstr "Odstrániť"
 msgid "Remove all associated contacts?"
 msgstr "Odstrániť všetky asiciované kontakty?"
 
-#: src/help.html:76
+#: src/help.html:74
 msgid "Remove: Removes this user from your contact list (completely) and revokes your authentication for him/her (if any)"
 msgstr "Odstrániť: Odstráni tohoto používateľa z vášho zoznamu kontaktov (úplne) a odoberie mu autorizáciu (ak nejakú mal)"
 
@@ -1159,7 +1191,7 @@ msgstr "Odstraňovanie %1 zo zoznamu..."
 msgid "Removing contacts..."
 msgstr "Odstraňovanie kontaktov..."
 
-#: src/message.html:132
+#: src/message.html:133
 msgid "Reply"
 msgstr "Odpoveď"
 
@@ -1172,19 +1204,19 @@ msgstr "Požiadavka odoslaná na %1..."
 msgid "Resource"
 msgstr "Zdroj"
 
-#: src/iRoster.html:22
+#: src/iRoster.html:23
 msgid "Resubscribe"
 msgstr "Znovu zapísať"
 
-#: src/help.html:75
+#: src/help.html:73
 msgid "Resubscribe: Opens a subscription request for this user"
 msgstr "Znovu zapísanie: Otvorí formulár s požiadavkou na zapísanie pre tohoto používateľa."
 
-#: src/groupchat_iroster.html:35
+#: src/groupchat_iroster.html:37
 msgid "Revoke Administrative Privilege"
 msgstr "Odobrať administračné oprávnenia"
 
-#: src/groupchat_iroster.html:31
+#: src/groupchat_iroster.html:33
 msgid "Revoke Membership"
 msgstr "Odobrať členstvo"
 
@@ -1192,19 +1224,19 @@ msgstr "Odobrať členstvo"
 msgid "Revoke Memebership"
 msgstr "Odobrať členstvo"
 
-#: src/groupchat_iroster.html:33
+#: src/groupchat_iroster.html:35
 msgid "Revoke Moderator Privilege"
 msgstr "Odobrať moderátorské oprávnenia"
 
-#: src/groupchat_iroster.html:29
+#: src/groupchat_iroster.html:31
 msgid "Revoke Voice"
 msgstr "Odobrať hlas"
 
-#: src/vcard.html:159
+#: src/vcard.html:160
 msgid "Role"
 msgstr "Rola"
 
-#: src/editbookmarks.html:174 src/groupchat_invite.html:56 src/joingroupchat.html:119 src/searchrooms.html:59
+#: src/editbookmarks.html:175 src/groupchat_invite.html:56 src/joingroupchat.html:120 src/searchrooms.html:59
 msgid "Room"
 msgstr "Miestnosť"
 
@@ -1212,11 +1244,11 @@ msgstr "Miestnosť"
 msgid "Safari since version 3"
 msgstr ""
 
-#: src/editbookmarks.html:184 src/groupchat_modifylist.html:310 src/vcard.html:175
+#: src/editbookmarks.html:185 src/groupchat_modifylist.html:312 src/vcard.html:174
 msgid "Save"
 msgstr "Uložiť"
 
-#: src/search.html:230 src/searchrooms.html:189
+#: src/search.html:225 src/searchrooms.html:189
 msgid "Search"
 msgstr "Hľadať"
 
@@ -1224,19 +1256,19 @@ msgstr "Hľadať"
 msgid "Search Server"
 msgstr "Hľadať server"
 
-#: src/roster.html:153
+#: src/roster.html:172
 msgid "Search User"
 msgstr "Hľadať používateľa"
 
-#: src/joingroupchat.html:114 src/searchrooms.html:178
+#: src/joingroupchat.html:115 src/searchrooms.html:178
 msgid "Search for Rooms"
 msgstr "Hľadať miestnosti"
 
-#: src/subscription.html:100
+#: src/subscription.html:99
 msgid "Search for a User"
 msgstr "Hľadať používateľa"
 
-#: src/search.html:129 src/search.html:146 src/search.html:95 src/searchrooms.html:28
+#: src/search.html:124 src/search.html:141 src/search.html:90 src/searchrooms.html:28
 #. (conference_server)
 #. (iq.getFrom())
 msgid "Search results for %1"
@@ -1254,28 +1286,28 @@ msgstr "Vybrať Jabber server na ktorý sa má pripojiť"
 msgid "Select User(s)"
 msgstr "Vybrať používateľa(ov)"
 
-#: src/chat.html:320 src/groupchat_bottom.html:277 src/send.html:104 src/subscription.html:120
+#: src/chat.html:322 src/groupchat_bottom.html:277 src/subscription.html:119
 msgid "Send"
 msgstr "Poslať"
 
-#: src/iRoster.html:16
+#: src/iRoster.html:17
 msgid "Send Message"
 msgstr "Poslať správu"
 
-#: src/help.html:70
+#: src/help.html:68
 msgid "Send Message: Opens the message dialog for this user"
 msgstr "Poslať správu: otvorí dialóg pre rozhovor s týmto používateľom"
 
-#: src/send.html:73
+#: src/send.html:72
 #. (srcW.roster.getUserByJID(jid).name)
 msgid "Send message to %1"
 msgstr "Poslať správy %1"
 
-#: src/subscription.html:58
+#: src/subscription.html:57
 msgid "Send subscription"
 msgstr "Poslať žiadosť o zápis"
 
-#: src/subscription.html:103
+#: src/subscription.html:102
 msgid "Send subscription to"
 msgstr "Poslať žiadosť o zápis"
 
@@ -1283,19 +1315,19 @@ msgstr "Poslať žiadosť o zápis"
 msgid "Sending presence..."
 msgstr "Posielanie informácií..."
 
-#: src/editbookmarks.html:175 src/index.html:410 src/joingroupchat.html:120
+#: src/editbookmarks.html:176 src/index.html:410 src/joingroupchat.html:121
 msgid "Server"
 msgstr "Server"
 
-#: src/subscription.html:107
+#: src/subscription.html:106
 msgid "Service (optional)"
 msgstr "Služba (nepovinné)"
 
-#: src/jwchat.html:1035
+#: src/jwchat.html:1038
 msgid "Service unavailable"
 msgstr "Služba nedostupná"
 
-#: src/changestatus.html:92
+#: src/changestatus.html:93
 msgid "Set"
 msgstr "Nastaviť"
 
@@ -1303,15 +1335,15 @@ msgstr "Nastaviť"
 msgid "Shange Status Message"
 msgstr "Zmeniť správu o stave"
 
-#: src/iRoster.html:31
+#: src/iRoster.html:32
 msgid "Show"
 msgstr "Zobraziť"
 
-#: src/groupchat_iroster.html:37 src/iRoster.html:19 src/iRoster.html:28 src/iRoster.html:33
+#: src/groupchat_iroster.html:39 src/iRoster.html:20 src/iRoster.html:29 src/iRoster.html:34
 msgid "Show Info"
 msgstr "Zobraziť informácie"
 
-#: src/help.html:73
+#: src/help.html:71
 msgid "Show Info: Show the user's profile"
 msgstr "Zobraziť informácie: zobrazí používateľov profil"
 
@@ -1323,27 +1355,27 @@ msgstr "Zobraziť menej možností"
 msgid "Show More Options"
 msgstr "Zobraziť viac možností"
 
-#: src/groupchat_iroster.html:24 src/iRoster.html:15 src/message.html:132
+#: src/groupchat_iroster.html:26 src/iRoster.html:16 src/message.html:133
 msgid "Start Chat"
 msgstr "Začať rozhovor"
 
-#: src/help.html:71
+#: src/help.html:69
 msgid "Start Chat: Opens a chat window for this user"
 msgstr "Začať rozhovor: otvorí okno pre rozhovor s používateľom"
 
-#: src/vcard.html:147
+#: src/vcard.html:148
 msgid "State"
 msgstr "Štát"
 
-#: src/roster.js:376 src/roster.js:441 src/roster.js:713
+#: src/roster.js:391 src/roster.js:456 src/roster.js:743
 msgid "Status"
 msgstr "Stav"
 
-#: src/changestatus.html:89
+#: src/changestatus.html:90
 msgid "Status Message"
 msgstr "Správa o stave"
 
-#: src/error_message.html:100 src/message.html:127 src/send.html:100
+#: src/error_message.html:101 src/message.html:128 src/send.html:99
 msgid "Subject"
 msgstr "Predmet"
 
@@ -1364,15 +1396,15 @@ msgstr ""
 msgid "Support for safari coming soon..."
 msgstr "Podpora pre Safari je plánovaná na najbližšiu dobu...."
 
-#: src/help.html:20 src/help.html:37
+#: src/help.html:20 src/help.html:38
 msgid "Supported Browsers"
 msgstr "Podporované prehliadače"
 
-#: src/help.html:39
+#: src/help.html:40
 msgid "Supported browsers and plattforms"
 msgstr "Podporované prehliadače a platformy"
 
-#: src/roster.js:24
+#: src/roster.js:27
 msgid "System"
 msgstr "Systém"
 
@@ -1384,11 +1416,11 @@ msgstr "Obsah"
 msgid "The contact list holds entries for each user you have added. By right clicking on such an item you get a context menu as shown in the screenshot to the left:"
 msgstr "Zoznam kontaktov obsahuje záznam pre každého používateľa, ktorého ste pridal(a). Pravým kliknutím na daný záznam sa vám zobrazí kontextové menu, tak ako je to na ukážke vľavo:"
 
-#: src/help.html:120
+#: NOT FOUND IN SOURCE
 msgid "This will cause your contact list or your chat dialog to be raised over all other open windows if a new message arrives"
 msgstr "Toto spôsobí, že váš zoznam kontaktov a okná s rozhovormi budú znovu zobrazené akonáhle dorazí správa."
 
-#: src/vcard.html:158
+#: src/vcard.html:159
 msgid "Title"
 msgstr "Titul"
 
@@ -1396,11 +1428,11 @@ msgstr "Titul"
 msgid "Topic"
 msgstr "Téma"
 
-#: src/roster.js:153 src/userprops.html:79
+#: src/roster.js:159 src/userprops.html:78
 msgid "Unfiled"
 msgstr "Nezaredený"
 
-#: src/vcard.html:157
+#: src/vcard.html:158
 msgid "Unit"
 msgstr "Jednotka"
 
@@ -1417,7 +1449,7 @@ msgstr "Odregistrovať zo služby %1 ..."
 msgid "Update"
 msgstr "Aktualizovať"
 
-#: src/options.html:529
+#: src/options.html:541
 msgid "Update interval"
 msgstr "Interval aktualizácie"
 
@@ -1433,11 +1465,11 @@ msgstr ""
 msgid "Use the form below to log into jabber and start your own web based client. You don't need to install any software at all to use this program."
 msgstr "Použite formulár na prihlásenie sa na jabber a spustenie web klienta. Nepotrebujete inštalovať žiadny softvér, aby ste mohli používať tento program."
 
-#: src/options.html:488
+#: src/options.html:500
 msgid "User Directory"
 msgstr "Adresár používateľov"
 
-#: src/help.html:88
+#: NOT FOUND IN SOURCE
 msgid "User doesn't want to be disturbed"
 msgstr "Používateľ si nepraje byť rušený"
 
@@ -1445,31 +1477,43 @@ msgstr "Používateľ si nepraje byť rušený"
 msgid "User don't wants to be disturbed"
 msgstr "Používateľ si nepraje byť rušený"
 
-#: src/help.html:91
+#: src/help.html:85
 msgid "User hasn't authenticated you"
 msgstr "Používateľ vás neautentifikoval"
 
-#: src/help.html:86
+#: src/help.html:82
 msgid "User is away"
 msgstr "Používateľ je preč"
 
-#: src/help.html:90
+#: NOT FOUND IN SOURCE
 msgid "User is invisible"
 msgstr "Používateľ je neviditeľný"
 
-#: src/help.html:87
+#: NOT FOUND IN SOURCE
 msgid "User is not available"
 msgstr "Používateľ nie je k dispozícii"
 
-#: src/help.html:89
+#: src/help.html:83
+msgid "User is not available / User doesn't want to be disturbed"
+msgstr ""
+
+#: NOT FOUND IN SOURCE
 msgid "User is offline"
 msgstr "Používateľ je offline"
 
 #: src/help.html:84
+msgid "User is offline / User is invisible"
+msgstr ""
+
+#: NOT FOUND IN SOURCE
 msgid "User is online"
 msgstr "Používateľ je online"
 
-#: src/help.html:85
+#: src/help.html:81
+msgid "User is online / User is willing to chat"
+msgstr ""
+
+#: NOT FOUND IN SOURCE
 msgid "User is willing to chat"
 msgstr "Používateľ je diskusie chtivý"
 
@@ -1489,7 +1533,7 @@ msgstr "Hlas"
 msgid "Voice List"
 msgstr "Zoznam hlasov"
 
-#: src/vcard.html:137
+#: src/vcard.html:138
 msgid "Web Site"
 msgstr "Web stránka"
 
@@ -1514,11 +1558,11 @@ msgstr "Víta vás JWChat na jwchat.org"
 msgid "Welcome to jabber.glubs.org"
 msgstr "Vitajte na jabber.glubs.org"
 
-#: src/help.html:116
+#: NOT FOUND IN SOURCE
 msgid "Whether to pop up messages although your status is not \"available\" or \"chat\""
 msgstr "Zobrazovať pop-up správy aj v prípade, že stav nie je \"dostupný\" alebo \"diskusia\""
 
-#: src/help.html:122
+#: NOT FOUND IN SOURCE
 msgid "Will display the time when a message arrived right to the users name in the chat dialog"
 msgstr "Zobrazovať čas, keď správa príde od používateľa, s ktorým prebieha diskusia"
 
@@ -1534,11 +1578,11 @@ msgstr "Už ste zaregistrovaný(á) na tejto bráne!"
 msgid "You can create a new user group by entering a new name for \"Group\" at the \"Available Groups\" box followed by clicking on \"&gt;\".  Remove a user from a group by clicking on \"&lt;\". A group is deleted from your contact list if there is no user left for this group."
 msgstr "Môžete vytvoriť novú skupinu používateľov zadaním mena do \"Skupina\" v \"dostupných skupinách\" \"&gt;\".  Pre odstránenie používateľa zo skupiny kliknite na \"&lt;\". Skupina je zmazaná z vášho zoznamu kontaktov a žiadny používateľ v tejto skupine nezostal."
 
-#: src/help.html:103
+#: src/help.html:97
 msgid "You can create a new user group by entering a new name for \"Group\" at the \"Available Groups\" box followed by clicking on \"&gt;\". Remove a user from a group by clicking on \"&lt;\". A group is deleted from your contact list if there is no user left for this group."
 msgstr "Môžete vytvoriť novú skupinu používateľov zadaním mena do \"Skupina\" v \"dostupných skupinách\" \"&gt;\".  Pre odstránenie používateľa zo skupiny kliknite na \"&lt;\". Skupina je zmazaná z vášho zoznamu kontaktov a žiadny používateľ v tejto skupine nezostal."
 
-#: src/jwchat.html:694
+#: src/jwchat.html:697
 #. (presence.getFrom())
 msgid "You have been unsubscribed from %1"
 msgstr "Odhlásili ste sa z %1"
@@ -1559,11 +1603,11 @@ msgstr "Musíte zadať používateľské meno"
 msgid "Your Contact List"
 msgstr "Váš zoznam kontaktov"
 
-#: src/jwchat.html:1556
+#: src/jwchat.html:1574
 msgid "Your browser must support frames and javascript to use this application. Please refer to our <a href=\"help.html\">online manual</a> for a list of supported browser."
 msgstr "Váš prehliadač musí podporovať rámy a javascript, aby ste mohli používať túto aplikáciu. Prosím skontrolujte <a href=\"help.html\">online manuál</a>, či je váš prehliadač zapísaný v zozname dostupných."
 
-#: src/changestatus.html:83 src/jwchat.html:76 src/status.html:12
+#: src/changestatus.html:84 src/jwchat.html:77 src/status.html:12
 msgid "away"
 msgstr "preč"
 
@@ -1571,7 +1615,7 @@ msgstr "preč"
 msgid "click to add user"
 msgstr "kliknúť pre pridanie používateľa"
 
-#: src/userhist_collections_iframe.html:27
+#: src/userhist_collections_iframe.html:29
 msgid "click to select collection"
 msgstr "kliknúť pre výber kolekcie"
 
@@ -1587,15 +1631,15 @@ msgstr "kliknúť pre výber používateľa"
 msgid "coming soon... ;-)"
 msgstr "bude čoskoro... ;-)"
 
-#: src/changestatus.html:80 src/jwchat.html:78 src/status.html:14
+#: src/changestatus.html:81 src/jwchat.html:79 src/status.html:14
 msgid "do not disturb"
 msgstr "nevyrušovať"
 
-#: src/chat.html:163
+#: src/chat.html:164
 msgid "error starting chat"
 msgstr "chyba pri zahájení rozhovoru"
 
-#: src/changestatus.html:79 src/jwchat.html:75 src/status.html:11
+#: src/changestatus.html:80 src/jwchat.html:76 src/status.html:11
 msgid "free for chat"
 msgstr "diskusie chtivý"
 
@@ -1603,7 +1647,7 @@ msgstr "diskusie chtivý"
 msgid "high"
 msgstr ""
 
-#: src/jwchat.html:79
+#: src/changestatus.html:85 src/jwchat.html:80
 msgid "invisible"
 msgstr "neviditeľný"
 
@@ -1611,7 +1655,7 @@ msgstr "neviditeľný"
 msgid "jid is missing.\\nAborting..."
 msgstr ""
 
-#: src/subscription.html:109
+#: src/subscription.html:108
 msgid "local jabber user"
 msgstr "lokálny jabber používateľ"
 
@@ -1623,19 +1667,19 @@ msgstr ""
 msgid "medium"
 msgstr ""
 
-#: src/error_message.html:103 src/message.html:134
+#: src/error_message.html:104 src/message.html:135
 msgid "next"
 msgstr "ďalej"
 
-#: src/changestatus.html:76 src/jwchat.html:77 src/status.html:13
+#: src/changestatus.html:77 src/jwchat.html:78 src/status.html:13
 msgid "not available"
 msgstr "nedostupný"
 
-#: src/changestatus.html:87 src/jwchat.html:80 src/status.html:18
+#: src/changestatus.html:88 src/jwchat.html:81 src/status.html:18
 msgid "offline"
 msgstr "offline"
 
-#: src/changestatus.html:75 src/jwchat.html:74 src/status.html:10
+#: src/changestatus.html:76 src/jwchat.html:75 src/status.html:10
 msgid "online"
 msgstr "online"
 
@@ -1647,7 +1691,7 @@ msgstr "nepovinný"
 msgid "pass is missing.\\nAborting..."
 msgstr ""
 
-#: src/error_message.html:103 src/message.html:134
+#: src/error_message.html:104 src/message.html:135
 msgid "prev"
 msgstr "predchádzajúci"
 
@@ -1660,7 +1704,7 @@ msgstr "ukázať informácie o používateľovi pre %1"
 msgid "this doesn't look like a valid hostname"
 msgstr "toto nevyzerá ako správne meno servera"
 
-#: src/subscription.html:59
+#: src/subscription.html:58
 msgid "to"
 msgstr "pre"
 
