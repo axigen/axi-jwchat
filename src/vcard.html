@@ -9,6 +9,7 @@
     <script src="jsjac.js"></script>
     <script>
       <!--
+var jwmain = opener.jwmain;
 var jid , vcard;
 var srcW; // the source window with necessary data
 
@@ -40,7 +41,7 @@ function sendSub() {
 }
 
 function init() {
-  srcW = opener.top;
+  srcW = jwmain;
   
   getArgs();
   
@@ -110,10 +111,10 @@ onkeydown = keyPressed;
 </script>
 <style type="text/css">
 /*<![CDATA[*/
- th { 
-  font-family: sans-serif;
-  font-size: 12px;
-    text-align: right;
+ th {
+  width: 80px;
+  font: 100 11px Arial, sans-serif;
+  text-align: left;
 }
 /*]]>*/
 </style>
@@ -122,7 +123,7 @@ onkeydown = keyPressed;
 <form>
     <fieldset>
       <legend><l>Name</l></legend>
-      <table>
+      <table cellspacing="2" cellpadding="2">
           <tr><th nowrap><l>Full Name</l>:</th><td width="100%"><input type=text id="FN" class="vcardBoxEditable"></td></tr>
           <tr><th nowrap><l>Family Name</l>:</th><td width="100%"><input type=text id="N.FAMILY" class="vcardBoxEditable"></td></tr>
           <tr><th nowrap><l>Name</l>:</th><td width="100%"><input type=text id="N.GIVEN" class="vcardBoxEditable"></td></tr>
@@ -163,14 +164,12 @@ onkeydown = keyPressed;
     <fieldset>
       <legend><l>About</l></legend>
       <table width="100%">
-          <tr><th><l>Birthday</l>:</th><td width="100%"><input type=text id="BDAY" class="vcardBoxEditable"></td></tr>
-		<tr><td colspan=2>&nbsp;</td></tr>
-          <tr><th><l>Description</l>:</th><td width="100%">&nbsp;</td></tr>
-          <tr><td colspan=2 width="100%"><textarea id="DESC" class="vcardBoxEditable" style="width:100%;" rows=4 wrap=virtual></textarea></td></tr>
+          <tr><th nowrap><l>Birthday</l>:</th><td width="100%"><input type=text id="BDAY" class="vcardBoxEditable"></td></tr>
+          <tr><th nowrap valign="top"><l>Description</l>:</th><td width="100%"><textarea id="DESC" class="vcardBoxEditable" style="width:100%;" rows=4 wrap=virtual></textarea></td></tr>
       </table>
     </fieldset>
     <div id="savebox">
-		<hr noshade size="1" size="100%">
+		<!--<hr noshade size="1" size="100%">-->
 		<div align="right">
 			<button onClick="window.close();"><l>Cancel</l></button>&nbsp;<button onClick="return sendSub();"><l>Save</l></button>
 		</div>

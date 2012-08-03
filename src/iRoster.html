@@ -6,37 +6,40 @@
     <script src="switchStyle.js"></script>
     <script language="JavaScript1.2">
       function toggleGrp(name) {
-      parent.top.roster.toggleGrp(name);
+        var jwmain = parent.jwmain;
+	jwmain.roster.toggleGrp(name);
       }
     </script>
   </head>
   <body class="roster">
     <div id="ie5menu" class="skin0" onMouseover="highlightie5(event)" onMouseout="lowlightie5(event)" onClick="jumptoie5(event)" display:none>
-    <nobr><div class="menuitems" func="roster.openChat"><l>Start Chat</l></div></nobr>
-		<nobr><div class="menuitems" func="roster.openMessage"><l>Send Message</l></div></nobr>
-    <nobr><div class="menuitems" func="openCustomPresence"><l>Presence</l></div></nobr>
-    <nobr><div class="menuitems" func="openUserProps"><l>Edit User</l></div></nobr>
-    <nobr><div class="menuitems" func="openUserInfo"><l>Show Info</l></div></nobr>
-    <nobr><div class="menuitems" func="openUserHistory" id='hist_menuitem'><l>History</l></div></nobr>
-    <nobr><div class="menuitems" func="openUserNote"><l>Edit Note</l></div></nobr>
-    <div class="menuitems" func="openSubscription"><l>Resubscribe</l></div>
-    <div class="menuitems" func="removeUser"><l>Remove</l></div>
-  </div>
+        <div class="menuitems" func="roster.openChat"><l>Start Chat</l></div>
+        <div class="menuitems" func="roster.openMessage"><l>Send Message</l></div>
+        <div class="menuitems" func="openCustomPresence"><l>Presence</l></div>
+        <div class="menuitems" func="openUserProps"><l>Edit User</l></div>
+        <div class="menuitems" func="openUserInfo"><l>Show Info</l></div>
+        <div class="menuitems" func="openUserHistory" id='hist_menuitem'><l>History</l></div>
+        <div class="menuitems" func="openUserNote"><l>Edit Note</l></div>
+        <div class="menuitems" func="openSubscription"><l>Resubscribe</l></div>
+        <div class="menuitems" func="removeUser"><l>Remove</l></div>
+    </div>
     <div id="gwMenu" class="skin0" onMouseover="highlightie5(event)" onMouseout="lowlightie5(event)" onClick="jumptoie5(event)" display:none>
-    <nobr><div class="menuitems" func="openCustomPresence"><l>Presence</l></div></nobr>
-    <nobr><div class="menuitems" func="openUserProps"><l>Edit</l></div></nobr>
-    <nobr><div class="menuitems" func="openUserInfo"><l>Show Info</l></div></nobr>
-  </div>
+        <div class="menuitems" func="openCustomPresence"><l>Presence</l></div>
+        <div class="menuitems" func="openUserProps"><l>Edit</l></div>
+        <div class="menuitems" func="openUserInfo"><l>Show Info</l></div>
+    </div>
     <div id="gChatMenu" class="skin0" onMouseover="highlightie5(event)" onMouseout="lowlightie5(event)" onClick="jumptoie5(event)" display:none>
-    <nobr><div class="menuitems" func="openGroupchat"><l>Show</l></div></nobr>
-    <nobr><div class="menuitems" func="openCustomPresence"><l>Presence</l></div></nobr>
-    <nobr><div class="menuitems" func="openUserInfo"><l>Show Info</l></div></nobr>
-  </div>
+        <div class="menuitems" func="openGroupchat"><l>Show</l></div>
+        <div class="menuitems" func="openCustomPresence"><l>Presence</l></div>
+        <div class="menuitems" func="openUserInfo"><l>Show Info</l></div>
+    </div>
 
     <div id="roster" class="roster">
     </div>
 
     <script language="JavaScript1.2">
+
+var jwmain = parent.jwmain;
 
 /* set this variable to 1 if you wish the URLs of the highlighted menu
  * to be displayed in the status bar 
@@ -64,9 +67,9 @@ function showmenuie5(e){
   selobj = firingobj;
   selectUser(selobj);
 
-  var user = parent.top.roster.getUserByJID(parent.top.cutResource(firingobj.id));
+  var user = jwmain.roster.getUserByJID(jwmain.cutResource(firingobj.id));
 
-  if (parent.top.isGateway(firingobj.id))
+  if (jwmain.isGateway(firingobj.id))
     menuobj = gwMenu;
   else if (user && typeof(user.type) != 'undefined' && user.type == 'groupchat')
     menuobj = gChatMenu;
@@ -97,7 +100,7 @@ function showmenuie5(e){
   else
     menuobj.style.top=ie5? document.body.scrollTop+event.clientY : window.pageYOffset+e.clientY;
   
-  if (typeof(top.loghost) == 'undefined')
+  if (typeof(jwmain.loghost) == 'undefined')
     document.getElementById('hist_menuitem').style.display = 'none';
 
   menuobj.style.visibility="visible";
@@ -112,9 +115,9 @@ function highlightie5(e){
   var firingobj=ie5? event.srcElement : e.target;
   if (firingobj.className=="menuitems"||ns6&&firingobj.parentNode.className=="menuitems"){
     if (ns6&&firingobj.parentNode.className=="menuitems") firingobj=firingobj.parentNode; //up one node
-    firingobj.style.backgroundColor="Highlight";
+   firingobj.style.backgroundColor="#e2f1f9";
 //     firingobj.style.color="HighlightText";
-    firingobj.style.color="black";
+    firingobj.style.color="#222222";
     if (display_url==1)
       window.status=event.srcElement.url;
   }
@@ -124,7 +127,7 @@ function lowlightie5(e){
   var firingobj=ie5? event.srcElement : e.target;
   if (firingobj.className=="menuitems"||ns6&&firingobj.parentNode.className=="menuitems"){
     if (ns6&&firingobj.parentNode.className=="menuitems") firingobj=firingobj.parentNode; //up one node
-    firingobj.style.backgroundColor="Menu";
+    firingobj.style.backgroundColor="#ffffff";
 //     firingobj.style.color="MenuText";
     firingobj.style.color="black";
     window.status='';
@@ -137,7 +140,7 @@ function jumptoie5(e){
     if (ns6&&firingobj.parentNode.className=="menuitems") firingobj=firingobj.parentNode;
     if (firingobj.getAttribute("func")) {
       var jid = selobj.id.substring(0,selobj.id.indexOf("/"));
-      eval("parent.top."+firingobj.getAttribute("func")+"('"+jid+"')");
+      eval("jwmain."+firingobj.getAttribute("func")+"('"+jid+"')");
     }
   }
 }
@@ -153,13 +156,13 @@ function selectUser(el) {
 function userClicked(el,jid) {
   selectUser(el);
 
-  var user = parent.top.roster.getUserByJID(parent.top.cutResource(jid));
+  var user = jwmain.roster.getUserByJID(jwmain.cutResource(jid));
 
   if(user && typeof(user.type) != 'undefined' && user.type == 'groupchat')
-    return parent.top.openGroupchat(jid);
+    return jwmain.openGroupchat(jid);
 
-  if (!parent.top.isGateway(jid))
-    return parent.top.roster.openChat(jid);
+  if (!jwmain.isGateway(jid))
+    return jwmain.roster.openChat(jid);
 }
 if (ie5||ns6){
   menuobj.style.display='';

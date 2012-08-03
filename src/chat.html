@@ -11,6 +11,7 @@
     <script src="jsjac.js"></script>
     <script>
       <!--
+var jwmain = opener.jwmain;
 var user;
 var srcW;
 var cFrame;
@@ -153,8 +154,8 @@ function init() {
   
   jid = passedArgs['jid'];
   
-  if (opener.top.roster) {
-    srcW = opener.top;
+  if (jwmain.roster) {
+    srcW = jwmain;
     if (srcW.srcW)
       jwcMain = srcW.srcW;
     else
@@ -172,8 +173,8 @@ function init() {
 
   document.getElementById('user_name').innerHTML = user.name;
 
-  if (typeof(srcW.loghost) == 'undefined')
-    document.getElementById('hist_button').style.display = 'none';
+/*  if (typeof(srcW.loghost) == 'undefined')
+    document.getElementById('hist_button').style.display = 'none';*/
 
   updateUserPresence();
 
@@ -302,19 +303,20 @@ onunload = cleanUp;
   </head>
   <body style="margin:8px;">
   <table width="100%" height="100%">
-		<tr><td colspan=2>
+		<tr><td>
 		<table border=0 cellspacing=0 cellpadding=0 width="100%">
-		<tr>
+
+        <tr>
 		<td width="100%" valign=top><img src="images/unavailable.gif" name="statusLed" width=16 height=16 border=0 align=left><span id="user_name" class="link" onClick="return openUserInfo();" style="padding:2px;" title="<l>Click to show user's vcard</l>"></span><br clear=all>
 		<span id="awaymsg" class="statusMsg"></span></td>
-		<td align=right valign=top><button id='hist_button' onClick="return openUserHistory();"><l>History</l></button></td></table>
-		</td></tr>
-    <tr><td width="100%" height="100%" colspan=2><iframe src="chat_iframe.html" id="chat" name="chat" scrolling="auto"></iframe></td></tr>
+		<td align=right valign=top><!--<button id='hist_button' onClick="return openUserHistory();"><l>History</l></button>--></td></tr></table>
+
+    <tr><td width="100%" height="100%"><iframe src="chat_iframe.html" id="chat" name="chat" scrolling="auto" style="border: 1px solid #ccccc6; background: none;" frameborder="0"></iframe></td></tr>
  		<form name="chatform" style="border:0px;margin:0px;padding:0px;">
     <tr>
-      <td valign=top><img id="toggle_icon" src="images/group_close.gif" width="14" height="14" onClick="toggle_msgbox(this);"></td>
+      <!--<td valign=top><img id="toggle_icon" src="images/group_close.gif" width="14" height="14" onClick="toggle_msgbox(this);"></td>-->
       <td width="100%">
-          <textarea id="msgbox" wrap="virtual" style="width:100%;height:1.4em;" onKeyPress="return msgboxKeyPressed(this,event);" onKeyDown="return msgboxKeyDown(this,event);"></textarea>
+          <textarea id="msgbox" wrap="virtual" style="width:100%;height:4.2em;" onKeyPress="return msgboxKeyPressed(this,event);" onKeyDown="return msgboxKeyDown(this,event);"></textarea>
       </td>
     </tr>
     <tr id="submitbutton" style="display:none;"><td colspan=2 align=right><button onClick="submitClicked(); return false;"><l>Send</l></button></td></tr>

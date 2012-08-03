@@ -8,6 +8,7 @@
     <script src="jsjac.js"></script>
     <script>
       <!--
+var jwmain = opener.jwmain;
 var jid;
 var srcW; // the source window with necessary data
 
@@ -139,8 +140,8 @@ function updateBookmarks() {
 
 function init() {
   // determine source window
-  if (opener.top.roster)
-    srcW = opener.top;
+  if (jwmain.roster)
+    srcW = jwmain;
 
   updateBookmarks();
 }

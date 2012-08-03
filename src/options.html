@@ -408,6 +408,7 @@ function init() {
   var transport_optidx = 1;
   var directory_selector = document.getElementById('directory_selector');
   var directory_optidx = 1;
+  var password_optidx = 1;
   for (var i in srcW.disco) {
     if (!srcW.disco[i].getNode) continue;
     var item = srcW.disco[i];
@@ -434,6 +435,10 @@ function init() {
     document.getElementById('dir_label').style.display = 'none';
   if (transport_optidx == 1)
     document.getElementById('gw_label').style.display = 'none';
+
+// same with password
+  if (password_optidx == 1)
+    document.getElementById('pw_label').style.display = 'none';
 }
 
 onload = init;
@@ -441,31 +446,38 @@ onunload = savePrefs;
       //-->
     </script>
 		<style type="text/css">
-			th { font-size: 80%; text-align: right; font-weight: normal; }
+			th { font-size: 11px; text-align: right; font-weight: normal; }
 			#transport_pane input { 
 			border: 1px solid black;
 			}
 			.tablabels {
 			padding-top: 8px;
 			margin-bottom: 4px;
-			cursor: default;
+			cursor: pointer;
 			}
 			.tablabel {
-			border: 1px solid black;
-			border-bottom: 0px solid white;
-			padding: 4px;
+			border: 1px solid #cccccc;
+			border-bottom: 1px solid cccccc;
+			-moz-border-radius: 4px 4px 0px 0px;
+			-webkit-border-radius: 4px 4px 0px 0px;
+			padding: 4px 7px;
+			margin: 0px 2px 0px 0px;
 			background-color: lightgrey;
 			}
 			.tablabelactive {
-			border: 1px solid black;
+			border: 1px solid #cccccc;
 			border-bottom: 1px solid white;
-			padding: 4px;
+			padding: 4px 7px;
+			-moz-border-radius: 4px 4px 0px 0px;
+			-webkit-border-radius: 4px 4px 0px 0px;
 			padding-top: 6px;
+			margin: 0px 2px 0px 0px;
 			background-color: white;
 			}
 			td.tabs {
 			padding: 4px;
-			border: 1px solid black;
+			border: 1px solid #cccccc;
+			border-top: none;
 			background-color: white;
 			}
 			.tab { display: block; }
@@ -549,7 +561,7 @@ onunload = savePrefs;
                       <td><input type="password" name="password_repeat" value=""></td></tr>
                     <tr><td></td><td><input type="submit"></td></tr>
                     </table></form>
-			</div><div class="tabinactive" id="transports_tab"><l>Register at</l> <select id="transports_selector" onchange="service_selected(this);"><option value=""> - <l>Choose Gateway</l> - </option></select><div id="transport_pane"></div></div><div class="tabinactive" id="directory_tab"><l>Register at</l>  <select id="directory_selector" onchange="service_selected(this);"><option value=""> - <l>Choose Directory</l> - </option></select><div id="directory_pane"></div></div><div class="tabinactive" id="about_tab" align="center">
+			</div><div class="tabinactive" id="transports_tab"><l>Register at</l> <select id="transports_selector" onChange="service_selected(this);"><option value=""> - <l>Choose Gateway</l> - </option></select><div id="transport_pane"></div></div><div class="tabinactive" id="directory_tab"><l>Register at</l>  <select id="directory_selector" onChange="service_selected(this);"><option value=""> - <l>Choose Directory</l> - </option></select><div id="directory_pane"></div></div><div class="tabinactive" id="about_tab" align="center">
 								<p>
 								<img src="images/jwchat.jpg" style="border:1px solid black;">
 								<h1 style="margin-bottom: 0px;">JWChat</h1>

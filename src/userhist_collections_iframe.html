@@ -7,12 +7,14 @@
     <script src="jsjac.js"></script>
 		<script>
 
+var jwmain = parent.jwmain;
+
 var ie5 = document.all&&document.getElementById;
 
 function init() {
   var myTable = document.getElementById('myTable');
   
-  if (parent.top.srcW.is.ie) {
+  if (jwmain.is.ie) {
     myTable.cellSpacing = 0;
     myTable.cellPadding = 0;
     myTable.border = 0;
@@ -66,14 +68,14 @@ function rowClicked(e) {
 		</script>
 
 		<style type="text/css">
-			body { background-color: white; }
+			body { background-color: #ffffff; }
 			th { 
 			font-size: 0.8em; 
-			border-bottom: 1px solid black;
+			border-bottom: 1px solid #000000;
 			padding: 2px;
 			}
 			td {
-			border-bottom: 1px solid black;
+			border-bottom: 1px solid #000000;
 			padding: 2px;
 			cursor: default;
 			}

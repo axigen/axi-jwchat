@@ -1,3 +1,6 @@
+
+var jwmain = parent.jwmain || window;
+
 function RosterGroup(name) {
   this.name = htmlEnc(name);
   this.users = new Array();
@@ -22,7 +25,7 @@ function RosterUser(jid,subscription,groups,name) {
     this.name = name;
   else if (this.jid == JABBERSERVER)
     this.name = loc("System");
-  else if ((this.jid.indexOf('@') != -1) && 
+  else if ((this.jid.indexOf('@') != -1) &&
            this.jid.substring(this.jid.indexOf('@')+1) == JABBERSERVER) // we found a local user
     this.name = this.jid.substring(0,jid.indexOf('@'));
   else
@@ -67,7 +70,7 @@ function RosterUpdateStyleIE() {
 
 function RosterGetUserIcons(from) {
   var images = new Array();
-  
+
   for (var i=0; i<this.groups.length; i++) {
     var img = this.rosterW.images[from+"/"+this.groups[i].name];
     if (img) {
@@ -83,24 +86,27 @@ function RosterToggleHide() {
   this.print();
   return;
 }
-	
+
 function RosterToggleGrp(name) {
   var el = this.rosterW.getElementById(name);
   if (el.className == 'hidden') {
     el.className = 'rosterGroup';
     this.hiddenGroups[name] = false;
     this.rosterW.images[name+"Img"].src = grp_open_img.src;
+    this.rosterW.images[name+"Img"].parentNode.nextSibling.className = 'rosterGroupName';
   } else {
     el.className = 'hidden';
     this.hiddenGroups[name] = true;
     this.rosterW.images[name+"Img"].src = grp_close_img.src;
+    this.rosterW.images[name+"Img"].parentNode.nextSibling.className = 'rosterGroupNameHidden';
+
   }
   this.updateStyleIE();
 }
 
 function RosterOpenMessage(jid) {
   var user = this.getUserByJID(jid);
-  var wName = makeWindowName(user.jid); 
+  var wName = makeWindowName(user.jid);
 
   if (user.messages.length > 0 && (!user.mW || user.mW.closed)) // display messages
     user.mW = open('message.html?jid='+escape(jid),
@@ -122,7 +128,7 @@ function RosterOpenChat(jid) {
 
   if (user.messages.length > 0 && (!user.mW || user.mW.closed)) // display messages
     this.openMessage(jid);
-		
+
   if (!user.chatW || user.chatW.closed)
     user.chatW = open("chat.html?jid="+escape(jid),
                       "chatW"+makeWindowName(user.jid),
@@ -159,7 +165,7 @@ function RosterUpdateGroupForUser(user) {
     group.users = group.users.concat(user);
   }
 }
-	
+
 function RosterUpdateGroups() {
   var oldGroups = this.groups;
   this.groups = new Array();
@@ -186,7 +192,7 @@ function RosterUpdateGroups() {
 
 function RosterUserAdd(user) {
   this.users = this.users.concat(user);
-	
+
   // add to groups
   this.updateGroupsForUser(user);
   return user;
@@ -217,7 +223,7 @@ function RosterGetGroupchats() {
       groupchats[groupchats.length] = this.users[i].jid+'/'+this.users[i].roster.nick;
   return groupchats;
 }
-	
+
 function Roster(items,targetW) {
   this.users = new Array();
   this.groups = new Array();
@@ -271,7 +277,7 @@ function rosterSort(a,b) {
 }
 
 function printRoster() {
-	
+
   /* update user count for groups */
   for (var i=0; i<this.groups.length; i++) {
     this.groups[i].onlUserCount = 0;
@@ -294,14 +300,14 @@ function printRoster() {
   var A = new Array();
 
 	/* ***
-	 * loop rostergroups 
+	 * loop rostergroups
 	 */
   for (var i=0; i<this.groups.length; i++) {
 
-    var rosterGroupHeadClass = (this.usersHidden && 
-				this.groups[i].onlUserCount == 0 && 
-				this.groups[i].messagesPending == 0 && 
-				this.groups[i].name != loc("Gateways")) 
+    var rosterGroupHeadClass = (this.usersHidden &&
+				this.groups[i].onlUserCount == 0 &&
+				this.groups[i].messagesPending == 0 &&
+				this.groups[i].name != loc("Gateways"))
       ? 'rosterGroupHeaderHidden':'rosterGroupHeader';
     A[A.length] = "<div id='";
 		A[A.length] = this.groups[i].name;
@@ -309,28 +315,37 @@ function printRoster() {
 		A[A.length] = rosterGroupHeadClass;
 		A[A.length] = "' onClick='toggleGrp(\"";
 		A[A.length] = this.groups[i].name;
-		A[A.length] = "\");'><nobr>";
-    var toggleImg = (this.hiddenGroups[this.groups[i].name])?'images/group_close.gif':'images/group_open.gif';
+		A[A.length] = "\");'>";
+	//  A[A.length] ="<nobr>";
+    var toggleImg = (this.hiddenGroups[this.groups[i].name])?'images/axi/group_close.png':'images/axi/group_open.png';
+	A[A.length] = "<div class='rosterGroupImage'>";
     A[A.length] = "<img src='";
 		A[A.length] = toggleImg;
 		A[A.length] ="' name='";
 		A[A.length] = this.groups[i].name;
-		A[A.length] = "Img'> ";
+		A[A.length] = "Img' style='margin: 6px 7px 3px'> ";
+		A[A.length] = "</div>";
+	var rosterGroupNameClass = (this.hiddenGroups[this.groups[i].name])?'rosterGroupNameHidden':'rosterGroupName';
+	A[A.length] = "<div class='";
+		A[A.length] = rosterGroupNameClass;
+		A[A.length] = "'>";
     A[A.length] = this.groups[i].name;
-		A[A.length] = " (<span id='";
-		A[A.length] = this.groups[i].name;
-		A[A.length] = "On'>";
-		A[A.length] = this.groups[i].onlUserCount;
-		A[A.length] = "</span>/<span id='";// put total number in span - sam
-    A[A.length] = this.groups[i].name;
-    A[A.length] = "All'>";
-		A[A.length] = this.groups[i].users.length;
-		A[A.length] = "</span>)";
-    A[A.length] = "</nobr></div>";
+		A[A.length] ="</div>";
+	//	A[A.length] = " (<span id='";
+	//	A[A.length] = this.groups[i].name;
+	//	A[A.length] = "On'>";
+	//	A[A.length] = this.groups[i].onlUserCount;
+	//	A[A.length] = "</span>/<span id='";// put total number in span - sam
+//    A[A.length] = this.groups[i].name;
+//    A[A.length] = "All'>";
+//		A[A.length] = this.groups[i].users.length;
+//		A[A.length] = "</span>)";
+	//  A[A.length] = "</nobr>";
+    A[A.length] = "</div>";
     var rosterGroupClass = (
-			    (this.usersHidden && this.groups[i].onlUserCount == 0 && 
-			     this.groups[i].messagesPending == 0 && 
-			     this.groups[i].name != loc("Gateways")) 
+			    (this.usersHidden && this.groups[i].onlUserCount == 0 &&
+			     this.groups[i].messagesPending == 0 &&
+			     this.groups[i].name != loc("Gateways"))
 			    || this.hiddenGroups[this.groups[i].name])
       ? 'hidden':'rosterGroup';
 
@@ -339,20 +354,20 @@ function printRoster() {
 		A[A.length] = "' class='";
 		A[A.length] = rosterGroupClass;
 		A[A.length] = "'>";
-    
+
     this.groups[i].users = this.groups[i].users.sort(rosterSort);
 
 		/* ***
-		 * loop users in rostergroup 
+		 * loop users in rostergroup
 		 */
     for (var j=0; j<this.groups[i].users.length; j++) {
       var user = this.groups[i].users[j];
 
-      var rosterUserClass = (this.usersHidden && 
-			     (user.status == 'unavailable' || 
-			      user.status == 'stalker') && 
-			     !user.lastsrc && 
-			     this.groups[i].name != loc("Gateways")) 
+      var rosterUserClass = (this.usersHidden &&
+			     (user.status == 'unavailable' ||
+			      user.status == 'stalker') &&
+			     !user.lastsrc &&
+			     this.groups[i].name != loc("Gateways"))
 	? "hidden":"rosterUser";
 
       A[A.length] = "<div id=\"";
@@ -366,24 +381,24 @@ function printRoster() {
 			A[A.length] = "');\" title=\"";
 			A[A.length] = user.name;
 			if (user.realjid) {
-				A[A.length] = "&#10;JID: ";
+				A[A.length] = " // JID: ";
 				A[A.length] = htmlEnc(user.realjid);
 			} else {
-				A[A.length] = "&#10;JID: ";
+				A[A.length] = " // JID: ";
 				A[A.length] = htmlEnc(user.jid);
 			}
-			A[A.length] = "&#10;";
+			A[A.length] = " // ";
 			A[A.length] = loc("Status");
 			A[A.length] = ": ";
 			A[A.length] = user.status;
       if (user.statusMsg) {
-        A[A.length] = "&#10;";
+        A[A.length] = " // ";
 				A[A.length] = loc("Message");
 				A[A.length] = ": ";
 				A[A.length] = htmlEnc(user.statusMsg);
 			}
 			if ((user.messages.length + user.chatmsgs.length) > 0) {
-				A[A.length] = "&#10;";
+				A[A.length] = " // ";
 				A[A.length] = loc("[_1] message(s) pending",(user.messages.length + user.chatmsgs.length));
 			}
       A[A.length] = "\">";
@@ -431,24 +446,24 @@ function getRosterGroupHeaderClass(usersHidden, group) {
 function getUserElementTitle(user) {
   var elTitle = user.name
   if (user.realjid) {
-    elTitle += "&#10;JID: ";
+    elTitle += " // JID: ";
     elTitle += htmlEnc(user.realjid);
   } else {
-    elTitle += "&#10;JID: ";
+    elTitle += " // JID: ";
     elTitle += htmlEnc(user.jid);
   }
-  elTitle += "&#10;";
+  elTitle += " // ";
   elTitle += loc("Status");
   elTitle += ": ";
   elTitle += user.status;
   if (user.statusMsg) {
-    elTitle += "&#10;";
+    elTitle += " // ";
     elTitle += loc("Message");
     elTitle += ": ";
     elTitle += htmlEnc(user.statusMsg);
   }
   if ((user.messages.length + user.chatmsgs.length) > 0) {
-    elTitle += "&#10;";
+    elTitle += " // ";
     elTitle += loc("[_1] message(s) pending",(user.messages.length + user.chatmsgs.length));
   }
   return elTitle;
@@ -534,7 +549,7 @@ function updateRoster() {
                   divEls[0].innerHTML += html;
               } catch(e) {
                 // qnd: somehow IE7 doesn't like the 'nobr' here - why?
-              }                
+              }
             }
           }
         }
@@ -543,7 +558,7 @@ function updateRoster() {
       if (groupHeaderEl) {
         groupHeaderEl.className = getRosterGroupHeaderClass(this.usersHidden, group);
 
-        if (this.rosterW.getElementById(group.name+'On')) 
+        if (this.rosterW.getElementById(group.name+'On'))
           this.rosterW.getElementById(group.name+'On').innerHTML = group.onlUserCount;
         if (this.rosterW.getElementById(group.name+'All'))
           this.rosterW.getElementById(group.name+'All').innerHTML = group.users.length;
@@ -554,7 +569,7 @@ function updateRoster() {
       groupHeaderEl.className = getRosterGroupHeaderClass(this.usersHidden, group);
       var onclickHandler = function(group) {
         var groupName = group.name;
-        var toggler = function() { parent.top.roster.toggleGrp(groupName); };
+        var toggler = function() { jwmain.roster.toggleGrp(groupName); };
         return toggler;
       }
       groupHeaderEl.onclick = onclickHandler(group);
@@ -569,7 +584,7 @@ function updateRoster() {
         ? 'hidden':'rosterGroup';
       groupEl.className = rosterGroupClass;
 
-      var rosterEl = this.rosterW.getElementById("roster");  
+      var rosterEl = this.rosterW.getElementById("roster");
 
       var siblingEl;
       var j = i + 1;
@@ -586,24 +601,32 @@ function updateRoster() {
       }
 
       var A = new Array();
-      A[A.length] = "<nobr>";
-      var toggleImg = (this.hiddenGroups[group.name])?'images/group_close.gif':'images/group_open.gif';
+//      A[A.length] = "<nobr>";
+      var toggleImg = (this.hiddenGroups[group.name])?'images/axi/group_close.png':'images/axi/group_open.png';
+	  A[A.length] = "<div class='rosterGroupImage'>";
       A[A.length] = "<img src='";
       A[A.length] = toggleImg;
       A[A.length] ="' name='";
       A[A.length] = group.name;
-      A[A.length] = "Img'> ";
+      A[A.length] = "Img' style='margin: 6px 7px 3px'> ";
+      A[A.length] = "</div>";
+	  var rosterGroupNameClass = (this.hiddenGroups[group.name])?'rosterGroupNameHidden':'rosterGroupName';
+	  A[A.length] = "<div class='";
+      A[A.length] = rosterGroupNameClass;
+      A[A.length] = "'>";
       A[A.length] = group.name;
-      A[A.length] = " (<span id='";
-      A[A.length] = group.name;
-      A[A.length] = "On'>";
-      A[A.length] = group.onlUserCount;
-      A[A.length] = "</span>/<span id='";// put total number in span, also - sam
-      A[A.length] = group.name;
-      A[A.length] = "All'>";
-      A[A.length] = group.users.length;
-      A[A.length] = "</span>)";
-      A[A.length] = "</nobr>";
+      A[A.length] ="</div>";
+//      A[A.length] = " (<span id='";
+//      A[A.length] = group.name;
+//      A[A.length] = "On'>";
+//      A[A.length] = group.onlUserCount;
+//      A[A.length] = "</span>/<span id='";// put total number in span, also - sam
+//      A[A.length] = group.name;
+//      A[A.length] = "All'>";
+//      A[A.length] = group.users.length;
+//      A[A.length] = "</span>)";
+//      A[A.length] = "</nobr>";
+      A[A.length] = "</div>";
       groupHeaderEl.innerHTML = A.join('');
 
 
@@ -643,16 +666,16 @@ function RosterUserClicked(el,jid) {
   this.selectUser(el);
 
   if (this.name == 'GroupchatRoster') {
-    return parent.top.user.roster.openChat(jid);
+    return jwmain.user.roster.openChat(jid);
   }
 
-  var user = parent.top.roster.getUserByJID(parent.top.cutResource(jid));
+  var user = jwmain.roster.getUserByJID(jwmain.cutResource(jid));
 
 	if(user && typeof(user.type) != 'undefined' && user.type == 'groupchat')
-		return parent.top.openGroupchat(jid);
+		return jwmain.openGroupchat(jid);
 
-	if (!parent.top.isGateway(jid))
-		return parent.top.roster.openChat(jid);
+	if (!jwmain.isGateway(jid))
+		return jwmain.roster.openChat(jid);
 }
 
 /***********************************************************************
@@ -665,11 +688,11 @@ function GCRosterSort(a,b) {
 
 function GroupchatRosterPrint() {
   var A = new Array();
-  
+
   this.groups = this.groups.sort(GCRosterSort);
 
   /* ***
-   * loop rostergroups 
+   * loop rostergroups
    */
   for (var i=0; i<this.groups.length; i++) {
     var rosterGroupHeadClass = (this.groups[i].users.length == 0) ? 'rosterGroupHeaderHidden':'rosterGroupHeader';
@@ -686,20 +709,20 @@ function GroupchatRosterPrint() {
     A[A.length] = "<div id='";
 		A[A.length] = this.groups[i].name;
 		A[A.length] = "' class='rosterGroup'>";
-    
+
     this.groups[i].users = this.groups[i].users.sort(rosterSort);
 
 		/* ***
-		 * loop users in rostergroup 
+		 * loop users in rostergroup
 		 */
     for (var j=0; j<this.groups[i].users.length; j++) {
       var user = this.groups[i].users[j];
-      var rosterUserClass = (this.usersHidden && 
-			     (user.status == 'unavailable' || 
-			      user.status == 'stalker') && 
-			     !user.lastsrc) 
+      var rosterUserClass = (this.usersHidden &&
+			     (user.status == 'unavailable' ||
+			      user.status == 'stalker') &&
+			     !user.lastsrc)
 	? "hidden":"rosterUser";
-      
+
       A[A.length] = "<div id=\"";
 			A[A.length] = htmlEnc(user.jid);
 			A[A.length] = "/";
@@ -710,24 +733,24 @@ function GroupchatRosterPrint() {
 			A[A.length] = htmlEnc(user.jid).replace(/\'/g,"\\\'")+"');\" title=\"";
 			A[A.length] = user.name;
 			if (user.realjid) {
-				A[A.length] = "&#10;JID: ";
+				A[A.length] = " // JID: ";
 				A[A.length] = htmlEnc(user.realjid);
 			} else {
-				A[A.length] = "&#10;JID: ";
+				A[A.length] = " // JID: ";
 				A[A.length] = htmlEnc(user.jid);
 			}
-			A[A.length] = "&#10;";
+			A[A.length] = " // ";
 			A[A.length] = loc("Status");
 			A[A.length] = ": ";
 			A[A.length] = user.status;
       if (user.statusMsg) {
-        A[A.length] = "&#10;";
+        A[A.length] = " // ";
 				A[A.length] = loc("Message");
 				A[A.length] = ": ";
 				A[A.length] = htmlEnc(user.statusMsg);
 			}
 			if ((user.messages.length + user.chatmsgs.length) > 0) {
-				A[A.length] = "&#10;";
+				A[A.length] = " // ";
 				A[A.length] = loc("[_1] message(s) pending",(user.messages.length + user.chatmsgs.length));
 			}
       A[A.length] = "\"><nobr>";
@@ -785,7 +808,7 @@ function getRosterGetFullJIDByNick(nick) {
       return this.users[i].fulljid;
   return null;
 }
-			
+
 function getGroupchatRosterUserByJID(jid) {
   // need to search fulljid here
   return getElFromArrByProp(this.users,"fulljid",jid);
@@ -816,9 +839,9 @@ GroupchatRoster.prototype = new Roster();
 var messageImg = new Image();
 messageImg.src = "images/message.gif";
 var grp_open_img = new Image();
-grp_open_img.src = 'images/group_open.gif';
+grp_open_img.src = 'images/axi/group_open.png';
 var grp_close_img = new Image();
-grp_close_img.src = 'images/group_close.gif';
+grp_close_img.src = 'images/axi/group_close.png';
 var arrow_right_blinking = new Image();
 arrow_right_blinking.src = 'images/arrow_right_blinking.gif';
 

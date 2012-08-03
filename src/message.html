@@ -8,6 +8,7 @@
     <script src="switchStyle.js"></script>
     <script>
       <!--
+var jwmain = opener.jwmain;
 var messages = new Array();
 var curMSG = lastMSG = 0;
 var jid;
@@ -36,7 +37,7 @@ function showMSG() {
   else 
     document.forms[0].elements["prevButton"].disabled = false;
 
-  if (curMSG+1==lastMSG && opener.roster.getUserByJID(jid).messages.length == 0)
+  if (curMSG+1==lastMSG && jwmain.roster.getUserByJID(jid).messages.length == 0)
     document.forms[0].elements["nextButton"].disabled = true;
   else
     document.forms[0].elements["nextButton"].disabled = false;
@@ -105,7 +106,7 @@ function openChat() {
 }
 		
 function init() {
-  srcW = opener.top;
+  srcW = jwmain;
   getArgs();
   jid = passedArgs['jid'];
   var user = srcW.roster.getUserByJID(jid);

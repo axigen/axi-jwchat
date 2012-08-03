@@ -1,15 +1,15 @@
 body { 
-  font-family: Verdana, sans-serif;
-  font-size: 12px;
+  font-family: Arial, sans-serif;
+  font-size: 11px;
   margin: 0;
   padding: 0;
-/*  background-color: #b8dbff; */
-  background-color: #81addc;
+  background-color: #edede6;
+/*  background-color: #81addc;*/
 }
 
 button {
-  font-family: Verdana, sans-serif;
-  font-size: 10px;
+  font-family: Arial, sans-serif;
+  font-size: 11px;
   border-style: solid;
   border-width: 1px; 
   border-color: #666666;
@@ -19,25 +19,34 @@ button {
 button:hover { border-style: outset; }
 button:active { border-style: inset; }
 
-input,label,td {
-  font-family: Verdana, sans-serif;
-  font-size: 12px;
+input,label,td, textarea, select {
+  font-family: Arial, sans-serif;
+  font-size: 11px;
+}
+
+hr {
+	color: #cccccc;
+}
+
+legend {
+	font-weight: bold;
 }
 
 fieldset { 
-  margin: 2px;
-  padding: 2px;
+  margin: 10px 2px;
+  padding: 4px;
+  border: 1px solid #cccccc;
 }
 
 /* roster */
 #roster {
   width: 100%;
-  cursor: default;
+  cursor: pointer;
 }
 
 .roster { 
   background-color: white;
-  color: black;
+  color: #333333;
 }
 
 .hidden {
@@ -45,20 +54,54 @@ fieldset {
 }
 
 .rosterUser { 
-  padding: 2px; 
+  padding: 4px;
 }
 
 .rosterUserSelected {
 /*  color: HighlightText; */
-  color: black;
-  background-color: Highlight;
-  padding: 2px;
+  background-color: #e2f1f9;
+  padding: 4px;
 }
 
 .rosterGroupHeader {
-/*	background-color: #d6d6d6; */
+  height: 21px;
+  color: #808080;
+  background: url(images/axi/group_bg.png) repeat-x scroll center center transparent;
   font-weight: bold;
 }
+
+.rosterGroupHeader .rosterGroupImage {
+	float: left;
+	width: 22px;
+	height: 21px;
+}
+
+.rosterGroupHeader .rosterGroupName {
+	float: left;
+	background-color: #ffffff;
+	margin-top: 1px;
+	padding: 3px 5px;
+	border-left: 1px solid #b3b3ad;
+	border-right: 1px solid #b3b3ad;
+}
+
+.rosterGroupHeader .rosterGroupNameHidden {
+	float: left;
+	margin-top: 1px;
+	padding: 3px 5px;
+	border-left: 1px solid #b3b3ad;
+}
+
+.rosterGroupHeader .rosterGroupCount {
+	float: left;
+	font-weight: normal;
+}
+
+/*.rosterGroupHeader nobr {
+	vertical-align: middle;
+	background-color: #ff0000;
+	height: 19px;
+}*/
 
 .rosterGroupHeaderHidden {
 /* 	background-color: #d6d6d6; */
@@ -69,21 +112,21 @@ fieldset {
 /* context menu */
 .skin0{
   position: absolute;
-  /*width:100px;*/
-  border: 2px outset ThreeDHighlight;
-  background-color: Menu;
-  color: ButtonText;
-  font-family: Verdana, sans-serif;
-  line-height: 16px;
-  cursor: default;
-  font-size: 12px;
+  min-width:140px;
+  border-color:#FFFFFF #DEDEDE #DEDEDE #FFFFFF;
+  border-style:solid;
+  border-width:2px;
+  background-color: #ffffff;
+  color: #222222;
+  font:11px/14px Arial,sans-serif;
+  cursor: pointer;
+  font-size: 11px;
   z-index: 100;
   visibility: hidden;
 }
 
 .menuitems{
-  padding-left:4px;
-  padding-right:4px;
+  padding: 3px 10px;
 }
 
 /* END context menu */
@@ -104,59 +147,96 @@ fieldset {
   height: 100%;
 }
 
-.rosterInnerElement { padding: 4px; padding-left:10px; padding-right:12px; }
+.rosterInnerElement {
+	padding: 0px 7px 0px 0px;
+}
 
-td.menubar {
-  padding: 2px;
-  border-bottom: 1px outset ThreeDFace;
-  background-color: Menu;
-  color: ButtonText;
+.top {
+	background: url(images/axi/top_bg.png) no-repeat left top;
+	height: 25px;
+	}
+
+.topborder {
+	border-right: 1px solid #9a9a95;
+	border-bottom: 1px solid #adada3;
+	border-left: 1px solid #ccccc6;
+	margin: 0px 5px 0px 0px;
+	height: 48px;
+}
+
+.topbg {
+	background: url(images/axi/top_bg.png) no-repeat center -25px transparent;
+	border-left: 1px solid #ffffff;
+	border-right: 1px solid #ffffff;
+	border-bottom: 1px solid #85857d;
+	padding: 11px 0px 0px 3px;
+	height: 100%;
+}
+
+.menubar {
+  padding: 10px;
+}
+
+.separator {
+	line-height: 12px;
+	width: 14px;
+	background: url(../private/ajax/Resources/images/axitheme-classic/vertical-dark-dots.gif) repeat-y scroll center center transparent;
 }
 
 a.menubar { 
-  font-size: 90%;
-/*  font-weight: bold; */
-  cursor: pointer;
-  text-decoration: none;
-  color: ButtonText;
+	background: url(../private/ajax/Resources/images/axitheme-classic/panel-title-underline-bkgr.gif) repeat-x scroll left bottom transparent;
+	color: #3F3F3D;
+	font: 11px Arial,sans-serif;
+	height:auto;
+	padding:0 !important;
+	cursor: pointer;
+	text-decoration: none;
 }
 
 a.menubar:hover { 
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 #myNickname {
   font-weight: bold;
   cursor: pointer;
+  color: #333333;
 }
 
 #myNickname:hover { text-decoration: underline; }
 
 .nickName {
-  padding: 2px;
+  padding: 2px 0px 0px 2px;
 }
 
 .statusMsg { 
   font-size: smaller;
-  padding-left: 22px;
+  color: #a3a3a3;
+  padding-left: 20px;
+  display: block;
+  width: 90%;
+  overflow: hidden;
 }
 
 #statusMsg { 
   font-size: smaller;
   padding-left: 2px;
-  width: 100%;
+  width: 90%;
  }
 
 .myStatusMsg {  
   cursor: pointer;
   border: 0;
-/*  background-color: #b8dbff; */
-  background-color: #aecbe9;
+  background: none;
+  color: #333333;
+/* background-color: #cccccc;*/
+/*  background-color: #aecbe9;*/
 }
 
 .myStatusMsgSelected { 
   cursor: text;
-  border: 1px;
+  color: #333333;
+/*  border: 1px; */
   background-color: #f9fae1;
 }
 
@@ -170,13 +250,13 @@ a.menubar:hover {
 }
 
 .vcardBox { 
-  border: 0;
-  background-color: #b8dbff;
+/*  border: 0; */
+  background-color: white;
   width: 100%;
 }
 
 .vcardBoxEditable { 
-  border: 1px;
+/*  border: 1px; */
   background-color: white;
   width: 100%;
 }

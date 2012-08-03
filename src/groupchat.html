@@ -16,6 +16,9 @@ var JABBERSERVER = opener.JABBERSERVER;
     <script src="roster.js"></script>
     <script language="JavaScript1.2">
 <!--
+
+var jwmain = opener.jwmain;
+
 var colors = new Array('maroon','green','olive','navy','purple','teal','red','blue');
 
 var scrollHeight = 0;
@@ -113,10 +116,10 @@ function displayTimestamp() {
   var tstyle;
   if (is.ie) {
     tstyle = cFrame.styleSheets('timestampstyle');
-    tstyle.disabled = opener.top.timestamps;
+    tstyle.disabled = jwmain.timestamps;
   } else {
     tstyle = cFrame.getElementById("timestampstyle");
-    tstyle.sheet.disabled = opener.top.timestamps;
+    tstyle.sheet.disabled = jwmain.timestamps;
   }
 }
 

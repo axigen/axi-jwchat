@@ -9,6 +9,8 @@
     <script src="jsjac.js"></script>
     <script>
       <!--
+var jwmain = opener.jwmain;
+
 function reloadHistory(iq) {
 
   if (iq && iq.getType != 'result')
@@ -120,8 +122,8 @@ function deleteHistory() {
 var srcW;
 function init() {
 	// determine source window
-	if (opener.top.roster)
-		srcW = opener.top;
+	if (jwmain.roster)
+		srcW = jwmain;
 	if (typeof(srcW) == 'undefined' || !srcW)
 		return;
 

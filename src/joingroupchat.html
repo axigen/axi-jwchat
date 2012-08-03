@@ -7,6 +7,7 @@
     <script src="switchStyle.js"></script>
     <script language="JavaScript1.2">
       <!--
+var jwmain = opener.jwmain;
 var jid;
 var srcW; // the source window with necessary data
 
@@ -70,8 +71,8 @@ function openSearchRooms() {
 
 function init() {
   // determine source window
-  if (opener.top.roster)
-    srcW = opener.top;
+  if (jwmain.roster)
+    srcW = jwmain;
   
   if (typeof(srcW.DEFAULTCONFERENCESERVER) != 'undefined' && srcW.DEFAULTCONFERENCESERVER != '')
     document.forms[0].server.value = srcW.DEFAULTCONFERENCESERVER;

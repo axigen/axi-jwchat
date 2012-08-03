@@ -8,6 +8,7 @@
     <script src="switchStyle.js"></script>
     <script language="JavaScript1.2">
       <!--
+var jwmain = opener.jwmain;
 var messages = new Array();
 var curMSG = lastMSG = 0;
 		
@@ -78,7 +79,7 @@ function prev() {
 		
 var srcW, user;
 function init() {
-  srcW = opener.top;
+  srcW = jwmain;
   if (srcW.error_messages.length > 0) {
     // show messages
     document.title = loc('Error'); // set title

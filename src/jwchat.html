@@ -44,6 +44,7 @@
  *                       ******  GLOBAL WARS(tm) *******
  ************************************************************************
  */
+var jwmain = window;
 var jid;
 var pass;
 var register = false; // whether to register new account
@@ -150,6 +151,12 @@ function openUserProps(aJid) {
 }
 
 function removeUser(aJid) {
+
+  var userByJID = roster.getUserByJID(aJid);
+  if (!userByJID) {
+	return;
+  }
+
   // get fulljid
   var fulljid = roster.getUserByJID(aJid).fulljid;
 
@@ -1059,8 +1066,8 @@ function handleConnected() {
 
   Debug.log("Connected",0);
   
-  if (register && opener && opener.document.forms[0] && opener.document.forms[0].register)
-    opener.document.forms[0].register.checked = false; 
+  /*if (register && opener && opener.document.forms[0] && opener.document.forms[0].register)
+    opener.document.forms[0].register.checked = false;*/
   
   /* get/setup roster */
   iq = new JSJaCIQ();
@@ -1185,9 +1192,9 @@ function getPrefs(iq) {
   // print roster
   roster.print();
   
-  if (opener.prio)
+  /*if (opener.prio)
     onlprio = opener.prio;
-  else
+  else*/
     onlprio = DEFAULTPRIORITY;
   
   // send presence
@@ -1387,14 +1394,15 @@ function init() {
   /* connect to remote */
   oArg = {domain:JABBERSERVER,username:jid.substring(0,jid.indexOf('@')),resource:jid.substring(jid.indexOf('/')+1),pass:pass,register:register}
   
-  if (BACKEND_TYPE == 'binding') {
+  /*if (BACKEND_TYPE == 'binding') {
     if (opener.connect_port && !isNaN(opener.connect_port))
       oArg.port = opener.connect_port;
     if (opener.connect_host && opener.connect_host != '')
       oArg.host = opener.connect_host;
     if (opener && opener.connect_secure)
       oArg.secure = true;
-  }
+  }*/
+  oArg.secure = CONNECTION_SECURE;
   con.connect(oArg);
 }
 
@@ -1475,43 +1483,43 @@ function logout() {
  */
 
 /* get args */
-getArgs();
+//getArgs();
 
 var JABBERSERVER;
 var BACKEND_TYPE;
 var HTTPBASE;
 
-if (opener && opener.JABBERSERVER)
+/*if (opener && opener.JABBERSERVER)
 	JABBERSERVER = opener.JABBERSERVER;
 else if (passedArgs['server'])
-	JABBERSERVER = passedArgs['server'];
+	JABBERSERVER = passedArgs['server'];*/
 
-if (opener && opener.BACKEND_TYPE)
+/*if (opener && opener.BACKEND_TYPE)
 	BACKEND_TYPE = opener.BACKEND_TYPE;
 else if (passedArgs['btype'])
-	BACKEND_TYPE = passedArgs['btype'];
+	BACKEND_TYPE = passedArgs['btype'];*/
 
-if (opener && opener.HTTPBASE)
+/*if (opener && opener.HTTPBASE)
 	HTTPBASE = opener.HTTPBASE;
 else if (passedArgs['base'])
-	HTTPBASE = passedArgs['base'];
+	HTTPBASE = passedArgs['base'];*/
 
-if (opener && opener.pass)
+/*if (opener && opener.pass)
 	pass = opener.pass;
 else if (passedArgs['pass'])
-	pass = passedArgs['pass'];
+	pass = passedArgs['pass'];*/
 
-if (opener && opener.jid)
+/*if (opener && opener.jid)
 	jid = opener.jid;
 else if (passedArgs['jid'])
-	jid = passedArgs['jid'];
+	jid = passedArgs['jid'];*/
 
-if (opener && opener.register)
+/*if (opener && opener.register)
 	register = opener.register
 else if (passedArgs['register'])
-	register = eval(passedArgs['register']);
+	register = eval(passedArgs['register']);*/
 
-if (!jid) {
+/*if (!jid) {
 	alert(loc("JID is missing.\nAborting..."));
   window.close();
 }
@@ -1521,22 +1529,36 @@ if (!pass) {
 }
 
 if (!isValidJID(jid))
-  window.close();
-
-nick = jid.substring(0,jid.indexOf('@'));
+  window.close();*/
 
 /* get style */
-if (opener && opener.myStyle)
+/*if (opener && opener.myStyle)
   stylesheet = THEMESDIR + "/" + opener.myStyle + "/" + stylesheet;
 else if (passedArgs['myStyle']) 
-  stylesheet = THEMESDIR + "/" + passedArgs['myStyle'] + "/" + stylesheet;
+  stylesheet = THEMESDIR + "/" + passedArgs['myStyle'] + "/" + stylesheet;*/
 
 function updateStyleIE() {
   if (roster)
     roster.updateStyleIE();
 }
 
-onload = init;
+onload = function () {
+
+	var username = top.Axi.AccountInfo.username;
+
+	BACKEND_TYPE = "binding";
+	HTTPBASE = IM_SERVER_URL;
+	JABBERSERVER = DOMAIN_NAME;
+
+	jid = username + "@" + JABBERSERVER + "/" + DEFAULTRESOURCE + Math.round(Math.random()*1000);
+	nick = jid.substring(0,jid.indexOf('@'));
+
+	top.Axi.Util.agp(function (p) {
+		pass = p;
+		init();
+	});
+};
+
 onunload = logout;
 onresize = updateStyleIE;
 
